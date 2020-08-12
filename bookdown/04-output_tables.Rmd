@@ -1,0 +1,211 @@
+# Output tables
+
+From the total table resulting from the loop, the core table and extension tables are made. These are all automatically saved as `.csv` files.
+
+## Taxon extension
+
+Scientific, species and genus names are added if not present.
+```{r missing, eval=FALSE, include=TRUE}
+ext_df$scientificName <- ifelse(ext_df$scientificName %in% NA, gsub("[[:punct:]]+", "", paste(ext_df$genus, ext_df$specificEpithet)), gsub("[[:punct:]]+", "", ext_df$scientificName)) #make scientific name if not present
+ext_df$genus <- ifelse(ext_df$genus %in% NA, word(ext_df$scientificName, 1), ext_df$genus) #make genus name if not present
+ext_df$specificEpithet <- ifelse(ext_df$specificEpithet %in% NA, word(ext_df$scientificName, 2), ext_df$specificEpithet) #make specific epithet if not present
+```
+
+Taxonomic information from the GBIF taxonomic backbone is added (`traitdataform`) and a taxonID is made.
+```{r GBIF, eval=FALSE, include=TRUE}
+taxa_std <- standardise_taxa(ext_df) #add taxonomic info columns
+taxon_names <- subset(metadata, category == "taxon") #subset only columns with names of taxon category
+taxon_names <- c(taxon_names$names) #vector with taxon names
+taxon_subset <- select(taxa_std, one_of(taxon_names)) #only select columns with names in taxon vector
+taxa_df <- taxa_std %>% select(taxonID = taxonID,
+                               scientificNameStd = scientificNameStd, 
+                               kingdom = kingdom,
+                               phylum = phylum,
+                               class = class,
+                               order = order,
+                               family = family) %>% mutate_each(list(as.character))
+taxa_bind <- cbind(taxa_df, taxon_subset) #combine columns
+Taxon <- distinct(taxa_bind) #only select unique rows
+Taxon$taxonID2 <- seq(1:nrow(Taxon)) #add more specific taxonID
+
+ext_df2 <- full_join(Taxon, taxa_std, by = c(colnames(Taxon[!colnames(Taxon) %in% "taxonID2"]))) #add taxonID2 column
+```
+
+Taxonomic information from The Plant List is added (`Taxonstand`).
+```{r TPL, eval=FALSE, include=TRUE}
+tpl <- TPL(splist = unique(Taxon$scientificName), corr = TRUE) #add taxonomic info form The Plant List
+tpl_merge <- left_join(Taxon, tpl, by = c("scientificName" = "Taxon")) #merge with Taxon df
+```
+
+Taxonomic information from the World Checklist of Vascular Plants is added. No package is available so the database is automatically downloaded and opened. **Important!** The WCVP database is from June 2020. If a new version is released, the file URL should be changed manually.
+```{r WCVP, eval=FALSE, include=TRUE}
+temp_zip <- tempfile() #make temporary files to story WCVP zip and text files
+temp_txt <- tempfile()
+download.file(url = "http://sftp.kew.org/pub/data-repositories/WCVP/wcvp_v2_jun_2020.zip", destfile = temp_zip) #download WCVP database
+unzip(zipfile = temp_zip, exdir = temp_txt) #unzip and save database as text file
+WCVP <- fread(file.path(temp_txt, "wcvp_export.txt")) #read WCVP text file
+unlink(c(temp_zip, temp_txt)) #remove temporary files
+
+wcvp_sub <- subset(WCVP, family %in% Taxon$family & rank == "SPECIES") #subset WCVP database to only included family names present in the datasets and only species names
+wcvp_sub$accepted <- ifelse(wcvp_sub$taxonomic_status == "Accepted", wcvp_sub$taxon_name, wcvp_sub$taxon_name) #make column for all accepted scientific names
+wcvp_merge <- left_join(tpl_merge, wcvp_sub, by = c("scientificName" = "taxon_name")) #merge with tpl_merge
+```
+
+The "Taxon" extension table is made and saved as `.csv` file.
+```{r taxon, eval=FALSE, include=TRUE}
+Taxon2 <- data.frame(taxonID = wcvp_merge$taxonID2, #df for Taxon extension 
+                     verbatimScientificName = wcvp_merge$scientificName,
+                     scientificNameGBIF = wcvp_merge$scientificNameStd,
+                     scientificNameTPL = ifelse(wcvp_merge$Plant.Name.Index == "FALSE" & wcvp_merge$Higher.level == "FALSE", NA ,paste(wcvp_merge$New.Genus, wcvp_merge$New.Species)),
+                     scientificNameWCVP = wcvp_merge$accepted,
+                     verbatimInfraspecificEpithet = wcvp_merge$infraspecificEpithet,
+                     kingdom = wcvp_merge$kingdom,
+                     phylum = wcvp_merge$phylum,
+                     class = wcvp_merge$class,
+                     order = wcvp_merge$order,
+                     family = wcvp_merge$family.x,
+                     genus = wcvp_merge$genus.x,
+                     stringsAsFactors = F,
+                     wcvp_merge[setdiff(taxon_names, c("specificEpithet","infraspecificEpithet","scientificName","genus"))],
+                     GBIFID = wcvp_merge$taxonID,
+                     TPLID = ifelse(wcvp_merge$New.ID == "", NA,
+                                    paste0("http://www.theplantlist.org/tpl",wcvp_merge$TPL.version,"/record/", wcvp_merge$New.ID)),
+                     WCVPID = ifelse(wcvp_merge$accepted_kew_id == "", 
+                                     paste0("http://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:", wcvp_merge$kew_id), 
+                                     paste0("http://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:", wcvp_merge$accepted_kew_id)))
+fwrite(Taxon2, "output_tables/Taxon_ext.csv", row.names = FALSE) #write taxon extension file
+```
+
+Example of the taxon extension table:
+```{r taxon_table, echo=FALSE}
+taxon <- tibble::tribble(
+  ~taxonID, ~verbatimScientificName,    ~scientificNameGBIF,     ~scientificNameTPL,    ~scientificNameWCVP, ~verbatimInfraspecificEpithet,  ~kingdom,        ~phylum,       ~class,     ~order,     ~family,    ~genus, ~originalNameUsage, ~morphotype, ~verbatimTaxonRank,                               ~GBIFID,                                                ~TPLID,                                                               ~WCVPID,
+         1,       "Attalea allenii",      "Attalea allenii",      "Attalea allenii",      "Attalea allenii",                            NA, "Plantae", "Tracheophyta", "Liliopsida", "Arecales", "Arecaceae", "Attalea",       "A. allenii",          NA,                 NA, "http://www.gbif.org/species/2732754", "http://www.theplantlist.org/tpl1.1/record/kew-17762",   "http://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:26553-2",
+         2,    "Attalea amygdalina",   "Attalea amygdalina",   "Attalea amygdalina",   "Attalea amygdalina",                            NA, "Plantae", "Tracheophyta", "Liliopsida", "Arecales", "Arecaceae", "Attalea",    "A. amygdalina",          NA,                 NA, "http://www.gbif.org/species/2732713", "http://www.theplantlist.org/tpl1.1/record/kew-17763",  "http://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:664411-1",
+         3,  "Attalea barreirensis", "Attalea barreirensis", "Attalea barreirensis", "Attalea barreirensis",                            NA, "Plantae", "Tracheophyta", "Liliopsida", "Arecales", "Arecaceae", "Attalea",  "A. barreirensis",          NA,                 NA, "http://www.gbif.org/species/2732742", "http://www.theplantlist.org/tpl1.1/record/kew-17766", "http://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1014709-1",
+         4,  "Attalea barreirensis", "Attalea barreirensis", "Attalea barreirensis", "Attalea barreirensis",                            NA, "Plantae", "Tracheophyta", "Liliopsida", "Arecales", "Arecaceae", "Attalea",                 NA,          NA,                 NA, "http://www.gbif.org/species/2732742", "http://www.theplantlist.org/tpl1.1/record/kew-17766", "http://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1014709-1",
+         5,     "Attalea butyracea",    "Attalea butyracea",    "Attalea butyracea",    "Attalea butyracea",                            NA, "Plantae", "Tracheophyta", "Liliopsida", "Arecales", "Arecaceae", "Attalea",      "S. rostrata",          NA,                 NA, "http://www.gbif.org/species/2732721", "http://www.theplantlist.org/tpl1.1/record/kew-17772", "http://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1172851-2",
+         6,     "Attalea butyracea",    "Attalea butyracea",    "Attalea butyracea",    "Attalea butyracea",                            NA, "Plantae", "Tracheophyta", "Liliopsida", "Arecales", "Arecaceae", "Attalea",     "S. butyracea",          NA,                 NA, "http://www.gbif.org/species/2732721", "http://www.theplantlist.org/tpl1.1/record/kew-17772", "http://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1172851-2"
+  )
+
+require(knitr)
+kableExtra::scroll_box(kableExtra::kable_styling(kable(taxon, digits = 3, row.names = FALSE, align = "l", caption = NULL), font_size = 11), width = "100%", box_css = "border: 0px;")
+
+```
+
+## Measurement or Fact extension
+
+The "Measurement or Fact" extension table is made and saved as an `.csv` file.
+```{r measurement, eval=FALSE, echo=TRUE}
+subset_meas <- subset(taxon_occ_meas, category == "measurement") #subset only columns with names of measurement category
+vector_meas <- c(subset_meas$names) #vector with measurement names
+Measurement <- data.frame(ext_df2[vector_meas], #df with all measurement or fact info
+                          basisOfRecord = ext_df2$basisOfRecord,
+                          references = ext_df2$references)
+Measurement <- distinct(Measurement) #select only distinct rows
+Measurement$measurementID <- seq(nrow(Measurement)) #add measurementID
+Measurement <- Measurement %>% select(measurementID, everything()) #measurementID as first column
+write.csv(Measurement, "output_tables/Measurement_or_Fact_ext.csv", fileEncoding = "Latin1", row.names = FALSE) #write measurement or fact extension file
+
+ext_df3 <- full_join(Measurement, ext_df2, by = c(colnames(Measurement[!colnames(Measurement) %in% "measurementID"])))
+```
+
+Example of the measurement or fact table:
+```{r measurement_table, echo=FALSE}
+measurement <- tibble::tribble(
+  ~measurementID, ~measurementDeterminedBy,      ~basisOfRecord,                                                                                                             ~references,
+               1,              "de Nevers", "PreservedSpecimen", "Henderson, A. (2020a). A revision of Attalea (Arecaceae, Arecoideae,  Cocoseae, Attaleinae). Phytotaxa, 444(1), 1-76.",
+               2,                 "Hammel", "PreservedSpecimen", "Henderson, A. (2020a). A revision of Attalea (Arecaceae, Arecoideae,  Cocoseae, Attaleinae). Phytotaxa, 444(1), 1-76.",
+               3,                  "Croat", "PreservedSpecimen", "Henderson, A. (2020a). A revision of Attalea (Arecaceae, Arecoideae,  Cocoseae, Attaleinae). Phytotaxa, 444(1), 1-76.",
+               4,                 "Sugden", "PreservedSpecimen", "Henderson, A. (2020a). A revision of Attalea (Arecaceae, Arecoideae,  Cocoseae, Attaleinae). Phytotaxa, 444(1), 1-76.",
+               5,               "Anderson", "PreservedSpecimen", "Henderson, A. (2020a). A revision of Attalea (Arecaceae, Arecoideae,  Cocoseae, Attaleinae). Phytotaxa, 444(1), 1-76.",
+               6,                   "Duke", "PreservedSpecimen", "Henderson, A. (2020a). A revision of Attalea (Arecaceae, Arecoideae,  Cocoseae, Attaleinae). Phytotaxa, 444(1), 1-76."
+  )
+
+require(knitr)
+kableExtra::scroll_box(kableExtra::kable_styling(kable(measurement, digits = 3, row.names = FALSE, align = "l", caption = NULL), font_size = 11), width = "100%", box_css = "border: 0px;")
+```
+
+## Occurrence extension
+
+Verbatim SRSs are standardized to EPSG-codes. Misspelled country names are corrected and standardized.
+```{r srs_country, eval=FALSE, include=TRUE}
+EPSG_df <- make_EPSG() #download EPSG database
+EPSG_df$verbatimSRS <- gsub("# ","", EPSG_df$note) #remove symbols
+EPSG_df[,c("note","prj4")] <- NULL #remove note and prj4 columns
+EPSG_df <- EPSG_df[!duplicated(EPSG_df[,"verbatimSRS"]),] #remove duplicate verbatimSRS values
+ext_df3 <- left_join(ext_df3, EPSG_df, by = "verbatimSRS") #merge by verbatimSRS
+ext_df3$geodeticDatum <- ext_df3$code #rename EPSG code column
+ext_df3$code <- NULL
+ext_df3$verbatimSRS <- NULL
+ext_df3$geodeticDatum <- ifelse(ext_df3$geodeticDatum %in% NA, "unknown", as.character(paste0("EPSG:",ext_df3$geodeticDatum))) #add "EPSG:" tag
+ext_df3$country <- rangeBuilder::standardizeCountry(ext_df3$verbatimCountry, fuzzyDist = 5) #standardize country names
+```
+
+The "Occurrence" extension table is made and saved as an `.csv` file.
+```{r occurrence, eval=FALSE, include=TRUE}
+subset_occ <- subset(taxon_occ_meas, category == "occurrence") #subset only columns with names of occurrence category
+vector_occ <- c(subset_occ$names) #vector with occurrence names
+Occurrence <- data.frame(ext_df3[vector_occ],
+                         country = ext_df3$country,
+                         geodeticDatum = ext_df3$geodeticDatum, stringsAsFactors = FALSE) #df with all occurrence info
+Occurrence <- distinct(Occurrence) #only select unique rows
+Occurrence$occurrenceID <- seq(1:nrow(Occurrence)) #add occurrenceID
+Occurrence <- Occurrence %>% select(occurrenceID, everything()) #move ID to first position
+fwrite(Occurrence, "output_tables/Occurrence_ext.csv", row.names = FALSE) #write occurrence extension file
+
+ext_df4 <- full_join(Occurrence, ext_df3, by = c(colnames(Occurrence[!colnames(Occurrence) %in% "occurrenceID"]))) #occurrenceID column
+```
+
+Example of the occurrence table:
+```{r occurrence_table, echo=FALSE}
+occurrence <- tibble::tribble(
+  ~occurrenceID, ~identificationID, ~recordNumber, ~institutionCode, ~verbatimLatitude, ~verbatimLongitude, ~verbatimElevation, ~verbatimCountry,     ~country, ~geodeticDatum,
+              1,               684,          4735,             "MO",               9.4,             -79.13,               "90",         "Panama",     "PANAMA",    "EPSG:4326",
+              2,                 7,          4152,             "NY",              9.31,             -78.91,              "300",         "Panama",     "PANAMA",    "EPSG:4326",
+              3,               718,          3639,             "MO",              9.31,             -78.25,              "350",         "Panama",     "PANAMA",    "EPSG:4326",
+              4,               678,          7301,             "MO",              9.31,             -78.91,              "350",         "Panama",     "PANAMA",    "EPSG:4326",
+              5,               720,          7191,             "MO",              9.43,             -79.11,                 NA,         "Panama",     "PANAMA",    "EPSG:4326",
+              6,               660,          7766,             "MO",              8.95,             -83.11,                 NA,     "Costa Rica", "COSTA RICA",    "EPSG:4326"
+  )
+
+require(knitr)
+kableExtra::scroll_box(kableExtra::kable_styling(kable(occurrence, digits = 3, row.names = FALSE, align = "l", caption = NULL), font_size = 11), width = "100%", box_css = "border: 0px;")
+
+```
+
+## Core table
+
+The core table is made from the total table and saved as `.csv` file. It is linked to the extension table via the "taxonID", "measurementID" and "occurrenceID" columns.
+```{r core, eval=FALSE, include=TRUE}
+core_table <- ext_df4 %>% select(scientificName = scientificNameStd,#df with all core values and ID's
+                               verbatimScientificName = scientificName,
+                               verbatimTraitName = verbatimTraitName,
+                               traitName = traitName,
+                               traitValue = traitValue,
+                               traitUnit = traitUnit,
+                               traitID = identifier,
+                               taxonID = taxonID2,
+                               measurementID = measurementID,
+                               occurrenceID = occurrenceID)
+fwrite(core_table, "output_tables/core_table.csv", row.names = FALSE) #write file with core values and ID's
+```
+
+Example of the core table:
+```{r core_table, echo=FALSE}
+core <- tibble::tribble(
+    ~scientificName, ~verbatimScientificName, ~verbatimTraitName,                  ~traitName, ~traitValue, ~traitUnit,                                    ~traitID, ~taxonID, ~measurementID, ~occurrenceID,
+  "Attalea allenii",       "Attalea allenii",        "Stflowlen",   "Staminate_flower_length",        0.98,       "cm",                                          NA,        1,              1,             1,
+  "Attalea allenii",       "Attalea allenii",         "Straclen", "Staminate_rachilla_length",           3,       "cm",                                          NA,        1,              1,             1,
+  "Attalea allenii",       "Attalea allenii",          "Petiole",            "Petiole_length",         150,       "cm", "http://purl.obolibrary.org/obo/TO_0000766",        1,              1,             2,
+  "Attalea allenii",       "Attalea allenii",            "Seeds",                "Seed_count",           3,    "count", "http://purl.obolibrary.org/obo/TO_0000445",        1,              1,             2,
+  "Attalea allenii",       "Attalea allenii",           "Pinwid",      "Median_leaflet_width",         3.8,       "cm",                                          NA,        1,              1,             2,
+  "Attalea allenii",       "Attalea allenii",        "Fruitdiam",               "Fruit_width",         3.6,       "cm", "http://purl.obolibrary.org/obo/TO_0002627",        1,              1,             2
+  )
+
+require(knitr)
+kableExtra::scroll_box(kableExtra::kable_styling(kable(core, digits = 3, row.names = FALSE, align = "l", caption = NULL), font_size = 11), width = "100%", box_css = "border: 0px;")
+
+
+```
+

@@ -1,0 +1,25 @@
+﻿Genus,Species,Subspecies,Preliminary,Status,Herbarium,Collector,Colnumber,Country,Latitude,Dlatitude,Longitude,Dlongitude,Elevation,Stemlength,Stemdiameter,Sheaths,Petioles,Segments,Midseglen,Midsegwid,Inflolen,Branching,Prophylls,Peduncles,Rachises,Rachilla,Fruitlength,Fruitdiam,Winged,Split,Segmen,Color,Stamfls,Pistfls,Endosp
+Chuniophoenix,hainanensis,,hainanensis,pistillate,A,F. How,72912,China,,,,,,,,,,,,,,,,,,20,17,15.5,,,,,,1,
+Chuniophoenix,hainanensis,,hainanensis,staminate,NY,Guo Lixiu,142,China,18.45,18.75,109.52,109.86,600,,,,,7,26.7,1.6,,,,,,22,,,,,,1,1,,
+Chuniophoenix,hainanensis,cultivated,hainanensis,pistillate,BH,"Chao-fen, Wei",123194,China,,,,,,2.5,7,,,,66,3,,,,,,16,,,,,,,,1,0
+Chuniophoenix,hainanensis,,hainanensis,pistillate,MO,Liang Deng,3555,China,18.45,18.75,109.56,109.94,750,3,6,,,,67,4.2,,,,,,16,16.7,15.5,,,,,,,0
+Chuniophoenix,hainanensis,,hainanensis,pistillate,MO,Lianze Chen,30027,China,,,,,600,3,8,,,,58,3.8,,,,,,18,,,,,0,,,,
+Chuniophoenix,hainanensis,,hainanensis,pistillate,IBSC,Diaoluoshan Expedition,2707,China,,,,,,8,6,,,,,,,,,,,20.5,,,,,,,,,
+Chuniophoenix,hainanensis,,hainanensis,,IBSC,Li Zexian,s.n.,China,,,,,600,2,,,,,,,,,,,,,,,,,,,,,
+Chuniophoenix,hainanensis,,hainanensis,pistillate,IBSC,Fu Guoai,2645,China,,,,,500,3.5,,,,,,,,,,,,16.5,17.6,14.2,,,,,,,
+Chuniophoenix,hainanensis,,hainanensis,,IBSC,Diaoluoshan Expedition,2258,China,,,,,,5,,,,,,,,,,,,,,,,,,,,,
+Chuniophoenix,suoitienensis,,suoitienensis,pistillate,NY,A. Henderson,3659,Vietnam,12.12,12.203,109.01,109.027,50,1.5,2,22,42,6,42,9,,,,,,18,10,10.1,0,0,1,,,1,1
+Chuniophoenix,suoitienensis,,suoitienensis,pistillate,NY,A. Henderson,3868,Vietnam,12.12,12.203,109.01,109.027,50,,,,,,,,,,,,,15.5,,,,,,,,1,
+Chuniophoenix,suoitienensis,,suoitienensis,staminate,NY,A. Henderson,3866,Vietnam,12.12,12.203,109.01,109.027,50,2,1.8,28,61,6,34,1.7,,,,,,10.2,,,0,0,1,0,1,,
+Chuniophoenix,nana,cultivated,humilis,pistillate?,MO,Qifang Liang,8,China,,,,,,,0.92,,25,5,26.5,3,,,,,,13,,,1,1,1,,1,,
+Chuniophoenix,nana,cultivated,nana,,NY,A. Henderson,3797,Vietnam,,,,,,,,10,9.5,6,27,4.2,,,3,7,33,21,,,1,1,1,0,,,
+Chuniophoenix,nana,cultivated,nana,,NY,A. Henderson,3798,Vietman,,,,,,1.5,1.5,9,17,7,31.5,5,,,3,24,9,12,,,1,1,1,0,,,
+Chuniophoenix,nana,,nana,pistillate,NY,A. Henderson,3600,Vietnam,21.06,21.11,106.43,106.72,100,0.6,1,,30,6,30,2.5,,,,,,16,,,1,1,1,,,,
+Chuniophoenix,nana,,nana,sterile,NY,A. Henderson,3478,Vietnam,21.27,21.45,105.38,105.63,200,1,,,,6,25.5,2.5,,,,,,,,,,,,,,,
+Chuniophoenix,nana,,nana,pistillate,A,A. Pételot,5394,Vietnam,,,,,,,,10.5,24.5,5,26.5,3.4,,,,,,14,,,1,1,1,,,0,
+Chuniophoenix,nana,,nana,pistillate,A,W. T. Tsang,30364,Vietnam,21.26,21.43,107.32,107.53,,,,,44,,30,3.3,,,,,,17,9.5,10.9,1,1,1,,,0,1
+Chuniophoenix,nana,,nana,pistillate,A,W. T. Tsang,26915,Vietnam,21.34,21.56,107.59,107.98,,,,,19.7,5,22.5,2.2,,,,,,,14.1,12.9,1,1,1,,,,1
+Chuniophoenix,nana,,nana,,A,W. T. Tsang,29463,Vietnam,21.27,21.45,107.42,107.7,,,,,,,,,,,,,,,,,,,,,,,
+Chuniophoenix,nana,,nana,,P,Chevalier,37636,Vietnam,21.11,21.18,107.34,107.56,,,,,,,,,,,,,,,,,1,1,1,,,,
+Chuniophoenix,nana,,nana,pistillate,LE,,1283,Vietnam,21.3,21.5,106.2,106.33,,,,11.5,,4,,,,,5,,,12.5,,,1,1,,,,0,
+Chuniophoenix,nana,cultivated,humilis,,,Henderson,,China,18.45,18.75,109.52,109.86,,,,,,,,,,,,,,,,,,,,,,,

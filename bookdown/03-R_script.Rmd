@@ -1,0 +1,139 @@
+# Data integration
+
+This chapter explains the different steps of the automated integration R-script. This script can be downloaded from the [Github-page for this project](https://github.com/tlenters/traitData).
+
+## Spreadsheet preparation
+Besides the two thesauri (chapter 2), the R-script also requires the plant trait spreadsheets containing all measurement data as input. A few requirements have to be met to make these spreadsheet suitable for integration:
+
+* All spreadsheets have to be comma-seperated value (`.csv`) files. If not the case, these can easily be converted from e.g. Excel files.
+* All values in columns assigned to the "trait" category should be in the same unit of measurement (e.g. not one value in meters and the next in centimeters).
+* Columns assigned to the "trait" category should only contain numeric values. If the measurement unit is also give within a value cell, it should be removed. The unit of a certain column should be specified through the units thesaurus only.
+* Within each individual spreadsheet, the use of decimal seperators should be consistent (not ',' in one and '.' in another column).
+
+## Loading and preparing input data
+
+### Installing and loading packages
+The following script checks if the required packages for this script are installed, and installs those that are missing. Packages are then loaded and working directory is set.
+```{r load_packages, eval=FALSE, include=TRUE}
+ls <- c("readxl","data.table","dplyr","reshape2","traitdataform","stringr","rgdal","Taxonstand","tidyverse","rangeBuilder")
+new.packages <- ls[!(ls %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+library(readxl)
+library(data.table)
+library(dplyr)
+library(reshape2)
+library(traitdataform)
+library(stringr)
+library(rgdal)
+library(Taxonstand)
+library(tidyverse)
+
+setwd("~/data_repository")
+```
+
+### Loading thesauri and preperation
+`read_excel()` is used to load in both thesauri. Therefore, they don't have to be converted to `.csv` files like the measurement spreadsheets.
+```{r load_thesauri, eval=FALSE, include=TRUE}
+metadata <- read_excel("thesauri/metadata.xlsx")
+units <- read_excel("thesauri/units.xlsx")
+```
+
+Several redundant rows and columns are stripped from both thesauri to make them machine-readable. This includes the removal of references, basisOfRecord and coordinates information. A data frame is constructed that relates verbatim trait names to standardized terms.
+```{r prepare_thesauri, eval=FALSE, include=TRUE}
+total_df <- metadata[-c(1:4),] #remove references, basisOfRecord and coordinates info
+id_df <- total_df %>% filter(category == "trait") %>% select(traitName = names, identifier) #df with trait names and URIs
+total_df$identifier <- NULL #remove identifier info
+unit_df <- units[-1,] #remove references
+```
+
+All cleaned spreadsheets (3.1) should be in the same folder called "raw_datasets". Their file path and names are loaded. A data frame is also made containing various metadata information for reach spreadsheet.
+```{r load_filelist, eval=FALSE, include=TRUE}
+datasets <- list.files("raw_datasets", pattern = ".csv$", full.names = TRUE) #list with file path and names
+dataset_names <- gsub("raw_datasets/|.csv", "", datasets) #names of all datasets
+metadata_df <- metadata[1:4,] %>% select(dataset_names) #df with metadata information
+```
+
+## Integrating datasets
+The different datasets are integrated and combined with the use of a loop. Column header standardization, adding of metadata information, unit harmonization and the conversion to a long-table format are done seperately for every dataset and combined to a total dataframe after every iteration.
+
+An empty data frame is made to append all datasets to.
+```{r start_loop, eval=FALSE, include=TRUE}
+ext_df <- data.frame() #empty df used for row binding
+```
+
+Column headers for a given dataset are selected and loaded from the corresponding `.csv` file. Numeric and character columns are loaded seperately and bound together.
+```{r header_std, eval=FALSE, include=TRUE}
+for (i in 1:length(datasets)){
+  
+  #thesaurus subsets
+  loop_thesaurus <- total_df %>% select(category, classes, names, verbatim = dataset_names[i]) %>% drop_na()
+  numeric_names <- loop_thesaurus %>% filter(classes == "numeric")
+  character_names <- loop_thesaurus %>% filter(classes == "character")
+  
+  #read classes from dataset
+  numeric_df <- fread(input = datasets[i], 
+                      select = numeric_names$verbatim, 
+                      col.names = numeric_names$names,
+                      colClasses = "numeric",
+                      encoding = "UTF-8")
+  character_df <- fread(input = datasets[i], 
+                        select = character_names$verbatim,
+                        col.names = character_names$names,
+                        colClasses = "character",
+                        encoding = "UTF-8")
+  
+  #bind for full dataset with standardized names
+  dataset <- cbind(numeric_df, character_df)
+```
+
+Columns containing trait data are converted from wide to long format. Columns "traitValue" and "traitName" are added.
+```{r wide_to_long, eval=FALSE, include=TRUE}
+  #melt data_full to long table
+  taxon_occ_meas <- loop_thesaurus %>% filter(category != "trait")
+  traits <- loop_thesaurus %>% filter(category == "trait")
+  data_melt <- melt(data = dataset, id.vars = taxon_occ_meas$names, measure.vars = traits$names, value.name = "traitValue", variable.name = "traitName", variable.factor = FALSE) %>% drop_na(traitValue)
+```
+
+References, basis of record, coordinate system and SRS are added from the metadata thesaurus.
+```{r add_ref, eval=FALSE, include=TRUE}
+  #add references, basisOfRecord and CRS
+  data_melt$references <- metadata_df[1,i] #add reference as column
+  data_melt$basisOfRecord <- metadata_df[2,i] #add basisOfRecord column
+  data_melt$verbatimCoordinateSystem <- metadata_df[3,i] #add verbatimCoordinateSystem as column
+  data_melt$verbatimSRS <- metadata_df[4,i] #add verbatimSRS as column
+```
+
+Measurement units are added as a column. These are standardized to "cm".
+```{r unit, eval=FALSE, include=TRUE}
+  #add unit column
+  loop_unit <- unit_df %>% select(traitName = names, traitUnit = dataset_names[i]) %>% drop_na() #relate unit to traitName
+  data_melt <- full_join(data_melt, loop_unit, by = "traitName") #add unit column by merging
+  
+  #standardize measurement units
+  data_melt$traitValue <- ifelse(data_melt$traitUnit == "m", data_melt$traitValue*100, data_melt$traitValue)
+  data_melt$traitValue <- ifelse(data_melt$traitUnit == "mm", data_melt$traitValue/10, data_melt$traitValue)
+  data_melt$traitUnit <- ifelse(data_melt$traitUnit == "m" | data_melt$traitUnit == "mm", "cm", data_melt$traitUnit)
+```
+
+Add verbatim trait names as column. Trait identifiers are added.
+```{r verba_ident, eval=FALSE, include=TRUE}
+  #add verbatim traitname column
+  verba_name <- select(traits, traitName = names, verbatimTraitName = verbatim)  #df to relate traitname to verbatim traitname
+  data_melt <- full_join(data_melt, verba_name, by = "traitName") #add verbatim traitname column by merging
+  
+  #add trait-identifier column
+  data_melt <- full_join(data_melt, id_df, by = "traitName")
+  data_melt <- subset(data_melt, is.na(traitValue) == FALSE)
+```
+
+Rows are bound for every dataset.
+```{r bind_rows, eval=FALSE, include=TRUE}
+  #output df (used for core table and extensions)
+  ext_df <- bind_rows(ext_df, data_melt)
+  
+}
+```
+
+
+

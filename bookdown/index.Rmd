@@ -1,0 +1,18 @@
+---
+title: Integration and harmonization of trait data from plant individuals across heterogeneous
+  sources
+author: Tim P. Lenters, Andrew Henderson, Caroline M. Dracxler, Guilherme A. Elias, Suzanne Mogue, Thomas L.P. Couvreur & W. Daniel Kissling
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+---
+
+# Introduction {-}
+This tutorial gives an indepth explanation of how to use and implement the different aspects of the workflow as described in Lenters *et al.,* (submitted)
+
+It consists of different chapters:
+
+1. How to use the metadataform
+2. How to implement forms into the thesauri
+3. Understanding and using the automated integration R-script
+4. Understanding the output tables from the workflow

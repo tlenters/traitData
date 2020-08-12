@@ -1,0 +1,408 @@
+Genus,Species,Collect,Number,Collnum,Herbari,Country,Plheigh,Stemhei,Stemdia,Sheathl,Petiole,Peduncl,Distanc,Prophyl,Pedbrac,Apinlen,Apinwid,Apinang,Bpinang,Bpinlen,Bpinwid,Nodivis,Rachisl,Rachisw,Rachill,Fruitle,Fruitdi,Dlat,Dlong,Elevati
+Hyospathe,elegans,Henderson,123,2048,ny,panama,,2,,,,,4,,,28.5,5,20,31,33,4.5,4,27.5,3.1,,,,8.58,-80.67,900
+Hyospathe,elegans,de Nevers,124,10585,ny,panama,,4,,,6.5,3.3,,,,22.2,,18,41,,,1,16,1.9,8,,,8.67,-81.08,900
+Hyospathe,elegans,de Nevers,130,6373,ny,panama,3,,0.95,20,8.8,2.2,3,,,,8.5,28,35,41.5,7.5,4,35.5,3.2,10,,,8.63,-80.65,700
+Hyospathe,elegans,de Nevers,134,6724,ny,panama,,5,1.13,23,11.5,3.3,,,,28,6,20,37,,4.8,7,40.5,5.2,11,,,8.7,-80.47,500
+Hyospathe,elegans,Allen,230,1202,mo,panama,3,,0.68,,12,3.5,,,,,,,34,,,1,29,2.7,8,,,8.58,-80.17,600
+Hyospathe,elegans,Croat,231,49040,mo,panama,2,,,,,,,,,,,,43,35,1.4,7,,5.1,,,,8.53,-81.08,1325
+Hyospathe,elegans,Hammel,232,1622,mo,panama,2,,0.68,16.5,5.5,2,,,,27.5,,25,,,,1,17,3.2,5,,,8.67,-80.42,500
+Hyospathe,elegans,Dwyer,245,8850,mo,panama,4,,0.89,,10,3.5,,,,,,,,,,1,,2.9,8,,,8.62,-80.08,1000
+Hyospathe,elegans,Antonio,247,1848,mo,panama,3,,0.84,,18,3.8,,,,,,,,,,3,43,3.1,12,,,8.53,-81.08,1000
+Hyospathe,elegans,Allen,248,2066,mo,panama,,,,22,,6,4.3,,,28,6,20,40,44.5,7.5,5,39.5,5.2,13,,,8.58,-80.13,600
+Hyospathe,elegans,Dwyer,249,4551,mo,panama,3.5,,0.83,17,7.5,,,,,,,,,,,,26,,7,,,8.58,-80.13,800
+Hyospathe,elegans,de Nevers,119,8391,ny,panama,,2.25,0.33,6.6,4,2.7,,4.2,8,15.5,,24,30,23.5,,1,8.7,2,2,9.9,7.2,8.07,-77.23,1300
+Hyospathe,elegans,Gentry,217,13686,bh,panama,,,0.56,14.5,5.2,2.2,,,,20,,22,40,29,,1,9,1.8,5,,,8.17,-77.25,1400
+Hyospathe,elegans,Gentry,218,13695,bh,panama,1.5,,0.32,4.5,4,0.9,,1,,16,,18,27,20.7,,1,5.5,1.5,3,,,8.17,-77.25,1300
+Hyospathe,elegans,Gentry,219,13694,bh,panama,2,,0.38,7,5.2,2,,,,13,,20,30,19,,1,6.8,1.4,3,,,8.17,-77.25,1400
+Hyospathe,elegans,Gentry,255,16852,mo,colombia,2,,0.43,,4,1.7,,,,18,16,18,30,,,1,9,1.4,3,,,8.55,-77.42,1400
+Hyospathe,elegans,Henderson,1,1527,ny,brazil,,,,,14.2,2.5,5.5,,,32,,27,39,,5.8,3,30.5,2.6,13,10.1,6.5,-1.83,-65.25,
+Hyospathe,elegans,Ribeiro,2,1602,ny,brazil,2,,1.24,,,3,,,,,,,,,,,,,17,,,,,
+Hyospathe,elegans,Krukoff,3,8599,ny,brazil,2.3,,,,,4.1,8,,25.3,,10.8,25,33,,7.5,4,55,4.8,22,,,-3.33,-69,
+Hyospathe,elegans,Krukoff,4,8079,ny,brazil,3.3,,,,,2.9,16.7,,,,,18,27,,7.6,3,46.4,5.2,18,,,-3.33,-69,
+Hyospathe,elegans,Krukoff,5,4545,ny,brazil,3,,1.17,,,3.4,,,,,,,,,,,,,17,10.1,6.8,-3.25,-64.83,
+Hyospathe,elegans,Irwin,6,47716,ny,brazil,5,,1.21,,24.5,3.4,,,,,,,24,68,11.5,3,,5.3,16,,,2.88,-52.37,
+Hyospathe,elegans,Rainer,7,25888,ny,peru,3,1.75,0.71,13.7,10,1.5,2.2,,,13.2,5.5,26,45,23.8,3.1,5,24.4,3.3,6,,,-9.47,-74.78,800
+Hyospathe,elegans,Schunke,8,1639,ny,peru,1.5,,0.68,,,2.7,,,,,,,23,,,,,,10,,,-8.92,-74.67,350
+Hyospathe,elegans,Jansen-Jacob,9,2998,ny,guyana,1.5,,0.83,,18.3,2.2,,,,33,10.2,28,36,42,6,,,3.2,8,,,2,-59.25,200
+Hyospathe,elegans,Galeano,11,1321,ny,colombia,,3,,,,,,,,,,,,,,3,,5.5,,11.8,4.9,-0.5,-72.25,200
+Hyospathe,elegans,Chavez,12,701,ny,peru,,2.5,,,,3.7,,,,,,,,,,3,,,18,,,-11.88,-71.97,400
+Hyospathe,elegans,Chavez,13,644,ny,peru,,2,,,,3,,,,28.5,5.3,24,,,,,,,21,,,-11.88,-71.58,400
+Hyospathe,elegans,Vasquez,14,14453,ny,peru,2,,0.89,17.1,9,4.4,,,,,,,,,,,,3.1,19,,,-3.75,-73.25,
+Hyospathe,elegans,Listabarth,15,1210589,ny,peru,2.75,3,,24.5,,3.8,7.3,,,,,,45,,7,,,5.3,13,,,-9.62,-74.93,260
+Hyospathe,elegans,Shiki,16,107,ny,ecuador,4,,,,27.3,,,,,,,,,,,,,,,13.9,7.2,-2.33,-77.68,500
+Hyospathe,elegans,Killip,17,26770,ny,peru,,1.6,0.79,19.4,20,2.1,5,,,,7.6,25,40,32,6,4,31,2.9,16,,,,,340
+Hyospathe,elegans,Elcoro,18,66,ny,venezuela,3,,0.64,,,2.3,,,,,,,36,,,1,,2.9,14,,,4.17,-63.75,440
+Hyospathe,elegans,Steyermark,19,90577,ny,venezuela,,,0.86,,19,2.4,,,,,,,,,,,,3.7,14,,,4.05,-63.05,525
+Hyospathe,elegans,Steyermark,20,113041,ny,venezuela,2,,,,17,,,,,,,,24,,,,,3.4,,,,,,255
+Hyospathe,elegans,Steyermark,22,124283,ny,venezuela,,,0.7,19,15.8,2.1,3.2,,,,,,34,37,9.1,3,,2.7,12,,,3.75,-62.83,400
+Hyospathe,elegans,Clarke,23,3603,ny,guyana,1.5,,,,24.5,3.5,6,,,,12,22,47,,11.5,3,57.5,5.9,10,10.2,7.2,2.98,-58.58,150
+Hyospathe,elegans,Clarke,24,7521,ny,guyana,1.5,,,,14.5,4.3,4,,,28.5,18,19,30,38.8,6.1,2,26.3,2.7,13,,,1.32,-58.95,850
+Hyospathe,elegans,Mori,25,22946,ny,french guian,3.5,,0.76,17,12,3.2,,,,,,,,,,4,40,,16,9.6,6.3,3.62,-53.2,300
+Hyospathe,elegans,Henderson,26,1650,ny,brazil,,1.43,1.01,,7,3.4,,,,,,,,,,3,53,,12,,,-8.33,-75.25,
+Hyospathe,elegans,Vasquez,28,12996,ny,peru,1.5,,0.84,,9.5,2.8,4,,,,19,,31,37,11,2,35,3.3,12,,,-3.5,-73.08,108
+Hyospathe,elegans,Smith,29,1996,ny,peru,4,,0.62,13.3,9,2.2,,,,,5.5,30,,,,3,,2.6,18,,,-10.18,-75.2,525
+Hyospathe,elegans,De Jong,30,160,ny,peru,,,,,,4.5,,,,,,,,,,3,,,21,,,-4.92,-73.75,120
+Hyospathe,elegans,Rainer,31,13988,ny,peru,3.5,3,0.9,23.5,9.4,,,16.8,26,,,,,21,1.2,10,43.3,3,,,,-9.45,-74.77,1560
+Hyospathe,elegans,Hoffman,32,3837,ny,guyana,3,,1.04,18.5,24.2,4.1,,,,,,,,,,,,,16,11.1,7.6,3.37,-59.47,600
+Hyospathe,elegans,Silveira,33,1254,ny,brazil,2,,1.17,,20.5,4.1,,,,,,,,,,,,,13,,,-7.47,-73.62,
+Hyospathe,elegans,Silveira,34,1177,ny,brazil,,1,0.76,,6.5,1.9,,,,21.7,,16,21,,,1,34.5,3.3,12,,,-8.3,-71.15,
+Hyospathe,elegans,Listabarth,35,1210589,ny,peru,2.75,3,,26,,3,,13.4,37.5,,,,,,,3,,,15,,,-9.62,-74.93,260
+Hyospathe,elegans,Vega,36,8689,ny,peru,3,,0.83,,33,4.5,,,,,,,,,,,,5.7,39,,,-5.67,-77.7,1535
+Hyospathe,elegans,Irwin,37,47290,ny,brazil,,,0.86,14.5,18.5,,,,,,,,27,,9.7,,,4.5,11,,,3.75,-51.87,
+Hyospathe,elegans,Balslev,38,60682,ny,ecuador,2,,0.98,,13,2.4,,,,24,9.2,30,62,,,3,40.5,4,27,,,-0.53,-76.38,300
+Hyospathe,elegans,Espinoza,39,499,ny,ecuador,2,,1.21,,,,,,,,,,,,,,,,,,,-1.78,-76.8,365
+Hyospathe,elegans,Stoffers,40,249,ny,guyana,2.5,,0.96,,,3.9,3.8,,,,,,31,51.5,9,3,,3.2,15,,,2.25,-59.17,350
+Hyospathe,elegans,Henderson,41,1040,ny,brazil,,,,,,,,18,26.5,,,,,,,,,,,,,-2.33,-59.83,
+Hyospathe,elegans,Stergios,42,13001,ny,venezuela,,,,,,,,,,,,,,,,,,,,12.4,6.8,5.95,-64.43,
+Hyospathe,elegans,Cruxent,44,112,ny,venezuela,,,0.66,,,2.4,,,,,,,,,,,,,15,,,2.17,-64,370
+Hyospathe,elegans,Delgado,45,1593,ny,venezuela,2,,,,,4,,27,26.5,36.5,9,24,,,,3,,,,,,5.35,-65.02,55
+Hyospathe,elegans,Bergmann,47,62129,ny,ecuador,,2.5,,30,29.5,,3.7,16.5,26.5,,11.8,25,66,52,2.8,19,91.5,5.2,,,,-0.43,-76.07,250
+Hyospathe,elegans,Mori,48,10800,ny,french guian,2,,0.84,15.5,15.8,2.4,2,,,,,,44,40.5,6.5,3,29.5,3.9,15,,,3.6,-53.27,600
+Hyospathe,elegans,de Granville,49,10893,ny,french guian,,,,,13,1.5,6.5,,,,,,58,34,3.2,3,30,3.6,11,14.6,7,3.55,-53.92,680
+Hyospathe,elegans,Knab-Vispo,50,696,ny,venezuela,3,,0.74,,10,2.5,,,,,,,35,46,10,,,3.5,13,9.9,7.9,6.2,-64.5,100
+Hyospathe,elegans,Henkel,54,5064,ny,guyana,2,,1.13,,,4.8,9,,,,12.5,25,35,65.5,9,3,60.5,4.8,,9.8,8.4,1.27,-58.6,600
+Hyospathe,elegans,Prance,55,1471,ny,brazil,2,,0.9,14.5,11.5,2.9,5,,,,,,,,7.5,3,29,3.6,11,,,-2.68,-50.73,
+Hyospathe,elegans,Pires,56,51274,ny,brazil,1.5,,0.93,,21,1.9,9.4,,,,,,42,,8,3,43,4.2,14,,,1.18,-52.13,
+Hyospathe,elegans,Henderson,57,1114,ny,brazil,,2,0.81,,7.7,2.1,9,16,19,,7.2,20,18,52.8,12.5,3,40.3,3.9,10,,,-7.42,-73.63,
+Hyospathe,elegans,Prance,58,30629,ny,french guian,,1.5,0.89,12.5,10,2,3,,14,30.5,7.4,17,30,36,4.5,4,28.5,,15,,,3.62,-53.2,
+Hyospathe,elegans,Atsut,59,1007,ny,peru,,,1.35,,,4.6,,,,,,,,,,,,,26,,,-4.5,-78.63,225
+Hyospathe,elegans,Vazquez,60,18759,ny,peru,4,,1.13,18,19,,,,,,,,,,11,3,49.5,4.1,,10.6,6.2,-4.92,-78.32,320
+Hyospathe,elegans,Killip,61,28546,ny,peru,,1.3,1.72,,16,6.6,,,,,,,,,,3,78,8.4,18,7.9,6.7,-5.75,-76.5,450
+Hyospathe,elegans,Salick,62,7668,ny,peru,1,,,,,,,,,,,,,,,,,,,,,-10.15,-75.2,
+Hyospathe,elegans,Killip,63,26540,ny,peru,3,,,,,2,6.5,,,28,6,26,,,3,3,29.5,3.5,18,,,,,375
+Hyospathe,elegans,Koyama,64,7315,ny,venezuela,2.5,,0.91,18.5,17.5,2.3,5.3,,,,7.5,20,30,45.5,6.5,5,41.5,3.1,14,,,5.68,-62.42,500
+Hyospathe,elegans,Vargas,65,2479,ny,bolivia,1.75,1,,,,,,,,,,,,,,,,,,,,-17.4,-64.25,375
+Hyospathe,elegans,Mori,66,24169,ny,french guian,1.5,,,,17.5,4,6.8,20.5,,40,10.5,28,45,50,5,5,53.5,4.3,16,,,3.62,-53.2,
+Hyospathe,elegans,Valera,69,13,ny,venezuela,,,0.71,15,15.5,3.5,,,,,14,,45,38,5,2,26.3,2.9,14,,,1.37,-65.05,470
+Hyospathe,elegans,Fernandez,70,7052,ny,venezuela,3,,0.94,,,3,,,,,,,,,,,,,17,12.9,6.3,2.93,-64.55,215
+Hyospathe,elegans,Clarke,71,8171,ny,guyana,1,,,,16.5,,,,,26.8,7.7,26,,,4.5,3,31.5,3.1,,,,1.55,-59.23,150
+Hyospathe,elegans,Beck,72,60,ny,brazil,,,,,,,,,,,,,,,,,,,,,,-0.25,-52.5,
+Hyospathe,elegans,Bordenave,73,398,ny,french guian,2,,,,15,2.7,,,,,,,,,,,,2.7,12,,,-4.7,-52.97,126
+Hyospathe,elegans,Pipoly,75,12487,ny,peru,1.5,,0.66,,,3.5,,,,,,,21,,,2,38,3.3,10,,,-3.5,-72.83,110
+Hyospathe,elegans,Beck,76,284,ny,brazil,2,,0.99,20,16.5,3.4,,,,,,,39,,9,,,4.6,18,,,-0.95,-49.8,
+Hyospathe,elegans,Maguire,77,24155,ny,surinam,,,0.81,,15,5.3,5,,,28,7,22,45,42,8,3,32.5,3.5,13,,,4,-56.5,
+Hyospathe,elegans,Oviedo,78,2,ny,bolivia,3.08,,,17.7,11.5,4.6,,,,,,,,,,3,,3.1,16,,,,,200
+Hyospathe,elegans,Henderson,79,2003,ny,peru,,,,,,,3.2,,,32.5,23,17,27,44.5,10,2,36.5,,,,,-3.75,-73.35,
+Hyospathe,elegans,Mori,80,18106,ny,french guian,2,,1.04,16,17,3.5,5.2,,,29,,23,36,,5.8,4,32.5,3.6,10,,,3.62,-53.2,275
+Hyospathe,elegans,Ferreira,81,147,ny,brazil,,1.59,1.35,,,5.6,5.5,,,,16.5,18,20,,21,3,74,6.8,,9.9,5.4,-9.2,-72.23,
+Hyospathe,elegans,Fleck,82,503,ny,peru,,2.35,1.47,,24,3.8,2,,,,,,,42,0.5,17,,,29,8.3,5,-5.28,-73.17,150
+Hyospathe,elegans,Maguire,83,24116,ny,surinam,,2,0.86,,,3,5.3,,,33,8.5,20,31,45,7,3,36,2.8,16,,,,,
+Hyospathe,elegans,Salick,84,7174,ny,peru,,,,,,,5.4,,,,6.7,27,40,30,4.6,3,30,2.5,,,,-10.17,-75.17,
+Hyospathe,elegans,Maas,85,12706,ny,brazil,3,,,,30,,,,,,,,,,,37,,,,,,-7.5,-74.25,
+Hyospathe,elegans,Prance,86,11810,ny,brazil,2,,0.91,14.5,12,2.1,,,,,,,,,,3,25.5,3.3,15,,,-7.67,-72.5,
+Hyospathe,elegans,Christenson,87,1856,ny,french guian,2,,,,,5,7,,,,,,35,52.5,8.8,3,44,3.6,17,,,5,-53,
+Hyospathe,elegans,Ancuash,88,1039,ny,peru,4,,1.74,,,4.5,,,,,,,,,,,,5.5,14,,,-4.5,-78.5,225
+Hyospathe,elegans,Kujikat,89,337,ny,peru,3,,1.56,,,4.2,,,,,,,,,,,,,,,,-4.5,-78.5,225
+Hyospathe,elegans,Rainer,90,19988,ny,peru,3,1.5,1.3,25.5,,,,,,,,,,,,2,,5.8,,12.8,5.2,-9.48,-74.83,400
+Hyospathe,elegans,Gentry,91,54563,ny,peru,3,,,,,,,,,,,,,,8.5,4,42.5,3.5,,,,-3.42,-72.83,130
+Hyospathe,elegans,Oldeman,92,,ny,french guian,2,,0.85,14.5,17.5,3,5.5,,,,,,40,,7.5,,37.2,3.7,15,,,3.5,-53,
+Hyospathe,elegans,de Granville,93,13315,ny,french guian,2,,0.62,15,18.5,3,5.5,,,,6.2,,32,44,7,3,31,2.9,11,,,4.6,-53.35,500
+Hyospathe,elegans,Hoff,94,6673,ny,french guian,2,,,,,4.4,,,,,,,,,,3,50.4,4.3,13,,,4.55,-52.88,40
+Hyospathe,elegans,Wallnofer,95,13515,ny,french guian,1.5,,,,10.3,4,2.8,,,,,,37,36,5.6,3,24,2.9,20,,,3.6,-53.28,720
+Hyospathe,elegans,Galeano,96,2104,ny,colombia,,2,,,,,8,,,,,,43,,4.5,7,,5.7,,,,-4.17,-69.92,180
+Hyospathe,elegans,Ancuash,97,1039,ny,peru,4,,1.45,,,4,,,,,,,,,,,,,21,,,-4.5,-78.5,225
+Hyospathe,elegans,Lewis,98,10072,ny,peru,,,,,,,,,,,,,,,,3,,,,,,-3.45,-75.83,160
+Hyospathe,elegans,Vasquez,103,6857,ny,peru,1.5,,1.09,,9.5,3,,,,,,,,,,,,,17,,,-3.8,-73.35,122
+Hyospathe,elegans,Ollgaard,104,9060,ny,ecuador,3,,0.96,18,15,1.9,,,,,,,65,,,,,3.7,17,,,-1.62,-77.83,1100
+Hyospathe,elegans,Fleck,105,644,ny,peru,,1.05,0.91,,,5.6,,,,,,24,,,,,,,15,,,-5.28,-73.17,150
+Hyospathe,elegans,Berg,106,18133,ny,brazil,3,,0.94,16,,4.4,,,,,,,,,,,,,14,,,-1.83,-60.17,
+Hyospathe,elegans,Chaparro,107,29,ny,colombia,,,,,,,,,,,,,,,,,,,,13.8,5.9,2.5,-73.92,1200
+Hyospathe,elegans,Killip,108,24706,ny,peru,,,1.24,27,22.5,2.2,5.2,,,22,5.7,20,65,36,1.5,4,36,4.2,19,,,-11.17,-75.33,1550
+Hyospathe,elegans,Berlin,109,6,ny,peru,,,0.61,,,2.5,4,,,,3.4,30,45,27.5,7,3,24,2.5,5,,,-4.42,-78.17,400
+Hyospathe,elegans,Henkel,110,2830,ny,guyana,1.5,,1.1,17,,4.4,,,,,,,,,,,,,11,,,2.23,-59.17,400
+Hyospathe,elegans,Tate,111,435,ny,bolivia,,,1.21,,,4.4,,,,,,,36,47,9.2,4,,3.9,17,,,-15.25,-68.17,800
+Hyospathe,elegans,Cowan,136,38365,ny,brazil,1.75,,1.08,,17,5.2,,,,,12,21,47,53.5,7.8,3,47.5,5.2,16,,,,,
+Hyospathe,elegans,Krukoff,137,1122,ny,brazil,3.6,,0.86,,18.5,2.4,6.7,,,,,,32,,6.5,4,,3.9,15,,,-3.68,-55.42,
+Hyospathe,elegans,Foster,140,3255,ny,peru,4,,,,,,,,,,,,,,,,,10.4,,11.7,7.1,-12.5,-71.17,
+Hyospathe,elegans,Jansen-Jacob,141,1526,ny,guyana,2,1,0.96,,18,3,,,,,,,31,,9.8,,,4.8,14,,,1.65,-58.62,365
+Hyospathe,elegans,Schunke,142,8163,ny,peru,1.5,,1.4,,16,3.4,,,,,,,,,,,,,14,,,-8.25,-76.5,650
+Hyospathe,elegans,Grant,143,10555,ny,colombia,2.6,,,,13,4,1.5,,,,,,55,22.5,0.5,,,3.9,10,,,4.67,-73.5,1980
+Hyospathe,elegans,Mori,144,22756,ny,french guian,2,,0.78,15.5,19.5,3.1,8.5,,,,,,22,47,6.5,3,37,2.8,13,,,3.62,-53.2,300
+Hyospathe,elegans,Jaramillo,145,12594,ny,ecuador,4,,,,,,,,,22,3.6,23,,,,,,,,,,,,1300
+Hyospathe,elegans,Sastre,146,6179,ny,french guian,,,,,9,,,,,,,21,25,54,,1,26,3.2,,,,4.08,-52.67,
+Hyospathe,elegans,Barbour,147,2656,ny,peru,4,,0.75,,,1.7,1.5,,,19,3,17,65,18,0.5,13,37.5,2.5,,9.8,7.5,-5.58,-78.5,1900
+Hyospathe,elegans,Prance,148,1832,ny,brazil,1.5,,1.37,,,3.6,,,,,11.5,19,37,,5,3,52,6,15,,,-1.75,-46.25,
+Hyospathe,elegans,Cazalet,149,7752,ny,ecuador,3.3,,,,,,,,,,,,,,,,45.5,3.6,,,,-2.4,-77.5,500
+Hyospathe,elegans,Vazquez,150,7321,ny,peru,3,,1.65,,,5.5,,,,,,,,,,,69,7.3,,,,-4.5,-72.33,200
+Hyospathe,elegans,Schunke,151,7958,ny,peru,6.5,,1.9,,,3.5,,,,,,,,,,,,5.4,22,,,-8.33,-76.33,475
+Hyospathe,elegans,Henderson,153,155,ny,colombia,,3,,,17,2.4,1.2,14,20,27.7,1.3,30,50,34.5,0.4,21,77.5,7.6,47,,,6.67,-74.83,1600
+Hyospathe,elegans,de Granville,154,10408,ny,french guian,2,,0.64,14,,2.5,4.5,,,26,7,21,30,44,4.7,5,33.5,3.3,13,9.8,7.2,3.62,-53.97,100
+Hyospathe,elegans,Davis,155,843,ny,peru,2,,0.86,,,3.3,5.5,,,39,5.7,34,45,46,8,5,47,4.3,20,,,-3,-72,
+Hyospathe,elegans,Mori,156,14908,ny,french guian,2.5,,0.78,,21.4,2.2,7.2,16.4,,31,7.5,24,34,56,6.5,4,34,3.1,9,,,3.62,-53.2,300
+Hyospathe,elegans,Wessels Boer,157,1512,ny,surinam,,1,0.9,20,18.5,4,9.5,,,,7,23,52,47,6,4,45.5,5.2,16,,,,,
+Hyospathe,elegans,Mori,158,15000,ny,french guian,1.5,,1.36,18,20,3.7,8.5,,,33.5,8,28,43,48,5,4,37.2,3.2,11,,,3.62,-53.2,300
+Hyospathe,elegans,Jansen-Jacob,159,1230,ny,guyana,3,,0.76,,,2.7,2.8,,,,10.5,,38,,6.8,3,31.5,3.1,11,8.7,8.3,3.35,-59.45,330
+Hyospathe,elegans,Henderson,160,827,ny,brazil,,2,,,,,6.5,23,,28.5,4.5,27,35,42,3,4,40,3.5,,,,-4.37,-70.18,
+Hyospathe,elegans,Plowman,161,11490,ny,peru,6,,,,22.5,2.3,3,,,23,7.5,22,82,27.5,1.5,25,125,6,28,5.6,4.7,-8.15,-76.57,565
+Hyospathe,elegans,Henderson,162,1124,ny,brazil,,2.5,,,,5.4,2.5,25.4,,27.5,5.5,23,56,45,3.2,18,,5.6,,,,-7.5,-73.5,350
+Hyospathe,elegans,Mori,163,8936,ny,french guian,,1.5,1.08,,18.5,4.5,5,,,,8,,35,,5,4,48,3.9,15,10.5,5.1,4.33,-52.58,
+Hyospathe,elegans,Galeano,164,1215,ny,colombia,,3,,,,,,,,29.5,12.7,21,,,,,,,,,,-0.66,-72.25,175
+Hyospathe,elegans,Plowman,166,12240,ny,brazil,1.5,,1.03,17.2,19.5,3.1,8.5,,,35,8.4,22,40,48.5,6.5,4,45,3.3,14,,,-1.85,-65.6,
+Hyospathe,elegans,Cid,167,83,ny,brazil,2,,1.31,,17,4.8,6.5,,,24.5,12.5,29,35,49.5,5.8,3,40.5,3.9,19,,,-1.92,-59.5,
+Hyospathe,elegans,Ruiz,168,1272,ny,peru,2,,0.57,,6,2.3,2.5,14.7,,21,16.4,30,49,30.5,5.3,2,24.5,2.8,8,,,-3.8,-73.42,123
+Hyospathe,elegans,Balslev,170,2302,ny,ecuador,4.5,,1.44,,,2.9,,,,26.5,11,26,,,,,,3.6,23,,,-0.25,-76.67,
+Hyospathe,elegans,Schunke,171,5615,ny,peru,8.5,,1.6,,40,2.2,3.8,,,28.5,8.5,28,73,,1,19,84.5,5.4,20,,,-8.17,-76.5,650
+Hyospathe,elegans,Henderson,172,676,ny,brazil,,3,0.86,,14,3.5,3.5,,,29,11.1,21,33,49.5,8,3,40,3.8,12,,,-2.88,-59.97,
+Hyospathe,elegans,Croizat,173,995,ny,venezuela,,,1.22,,,3.2,,,,,,,,,7.4,,,,15,,,,,
+Hyospathe,elegans,Balslev,174,62073,ny,ecuador,,,1.38,,,4.1,11,,,23.8,15.2,23,38,48,5.5,6,75.5,6.2,33,,,0.03,-76.2,300
+Hyospathe,elegans,Balslev,175,4305,ny,ecuador,5.5,,1.44,,,4.5,,,,28,11.3,25,,,,,,4,18,,,0,-76.18,230
+Hyospathe,elegans,Balslev,176,62069,ny,ecuador,,5,,27.5,23,2,6,,,18,13.6,22,62,44.5,4,19,,7,25,,,0.03,-76.2,300
+Hyospathe,elegans,Amaral,178,1333,ny,brazil,1,,1.23,,19.5,4.7,8.5,,,,,,30,61.5,10.5,5,65,4.5,12,,,-5.92,-55.67,
+Hyospathe,elegans,Henderson,179,865,ny,brazil,,3,1.18,,,3.3,,,,,,,,,,5,75,4.6,31,,,-4.5,-71.75,150
+Hyospathe,elegans,Amaral,180,1488,ny,brazil,1,,1.62,20,17,3.9,4.5,,,,,,52,45,7,,,4.7,19,10.9,7.3,1.53,-62.8,
+Hyospathe,elegans,Gentry,181,53024,ny,colombia,5,,,,,,,,,,,,,,,,,,,,,3.5,-76.58,1930
+Hyospathe,elegans,Liesner,183,18928,ny,venezuela,2,,0.98,,23,,,,,40,11.5,21,38,57.5,7,,,4.3,,,,4.38,-61.63,520
+Hyospathe,elegans,Balslev,184,4315,ny,ecuador,,,1.5,,21,3.8,,,,,,,43,68.5,12.5,3,66.5,6.2,13,,,-0.28,-77.05,300
+Hyospathe,elegans,Balslev,185,62059,ny,ecuador,,5,1.42,,31,3.1,13,,,17,18.5,18,38,66,13,4,50,4,20,,,0.03,-76.2,300
+Hyospathe,elegans,Ayala,186,2362,ny,peru,5,,1.36,,12.5,,,,,,,,,,,,,8.4,,,,-4.33,-74.33,
+Hyospathe,elegans,Bergmann,187,62130,ny,ecuador,4.3,3,1.03,28.5,34.5,2.5,,,,,,,38,63,12.5,,,4.6,,,,-0.43,-76.07,250
+Hyospathe,elegans,Pedersen,188,97653,ny,ecuador,,2.31,,,,,,,,,,,,,,,,,,,,-1.17,-77.48,470
+Hyospathe,elegans,Mori,189,8753,ny,french guian,2,,0.79,,16.5,3.2,6.5,,,29,9.5,17,50,39,3.8,3,32,3.2,12,,,3.62,-53.27,
+Hyospathe,elegans,Henderson,190,153,ny,colombia,,3,,,19,,1.1,23.5,,32,2,14,30,32,0.7,25,99,8.7,,8.4,5.7,6.66,-74.92,1600
+Hyospathe,elegans,Mori,191,9169,ny,brazil,1.5,,0.82,14.5,,2.5,2.5,,,25,6.6,20,34,36.5,7,3,25.7,2.6,14,8.2,6.3,-3.33,-69,
+Hyospathe,elegans,Balick,192,1133,ny,peru,3,,1.02,,,3.4,,,,,,,,,,,,,12,15.7,5.7,-3.08,-71.92,
+Hyospathe,elegans,Wessels Boer,193,457,ny,surinam,,2,,17.2,17.4,3.6,6.3,,,31.5,10.8,22,35,44,5.5,4,44.5,3.8,10,10.2,7.1,,,
+Hyospathe,elegans,Balslev,194,60500,ny,ecuador,2,,1.6,,22.5,2.7,12,,,46,12,23,50,58,8,3,56,5,17,,,0.53,-76.38,300
+Hyospathe,elegans,Foster,195,7999,ny,peru,,2,0.82,14,16,1,5,,,22,8.7,23,26,,11,3,42,3.2,14,,,-10.2,-75.25,380
+Hyospathe,elegans,Wessels Boer,197,1496,ny,surinam,,1.2,0.64,14,17,,6,12,,24.5,7.2,22,33,35,5,3,30,2.7,,,,3.92,-56.17,
+Hyospathe,elegans,Feuillet,199,9926,ny,french guian,2.5,,1.09,19.5,21,4.3,5,,,27,11.5,27,40,48,7.5,6,54,3.8,17,,,4.3,-52.37,325
+Hyospathe,elegans,Smith,200,1285,ny,peru,,3.5,1.27,,,3,5.8,,,33,13.5,28,55,50,7.5,4,51,5.8,15,,,-9.52,-74.97,350
+Hyospathe,elegans,Palacios,201,590,ny,ecuador,3,,,,28,3,,,,46,14.5,23,40,61.5,15.2,,,6,,15.4,6.7,-1.4,-76.75,275
+Hyospathe,elegans,Galeano,202,1999,ny,colombia,,5,1.09,,17,3.5,5,,,31,7.6,22,57,41.3,5,4,44,3.4,28,,,-1.25,-69.66,250
+Hyospathe,elegans,Ayala,203,3884,ny,peru,1.5,,0.53,9.5,7.5,4,4.5,,,,3.5,21,45,33,5,3,25,2.2,12,,,-3.83,-73.83,120
+Hyospathe,elegans,Henderson,204,892,ny,venezuela,,2,1.14,,,3.2,7,,,39,10.5,26,46,53,12,4,44.5,3.7,25,8.8,5.2,2.02,-65.58,228
+Hyospathe,elegans,Baker,205,6812,ny,ecuador,,2,1.46,,15,2.6,4,,,31,15.4,30,43,45,15,3,58.5,5.2,13,,,-2.33,-77.58,500
+Hyospathe,elegans,Boom,206,10428,ny,venezuela,2,,0.97,,19.2,2.2,4.5,,,23,15,22,40,43,10.4,3,46,3.6,14,,,5.15,-64.57,170
+Hyospathe,elegans,Pedersen,207,104021,ny,ecuador,,2.7,1.53,32,38.5,4,7,,,29,7,26,49,49,2.5,18,95,6.4,26,,,0.05,-76.22,265
+Hyospathe,elegans,Luteyn,208,8519,ny,ecuador,,,0.85,,,2.5,5.9,16,15.6,21.3,8,27,50,37,6.2,3,37.5,3,20,,,-0.52,-76.38,270
+Hyospathe,elegans,Bergmann,209,62125,ny,ecuador,1.68,0.36,,19,11,,5,,,,,,27,,12,2,44,,,,,-0.98,-75.45,250
+Hyospathe,elegans,Gentry,216,28643,bh,colombia,3,,1.31,,26.5,5.8,,,,,,,85,,1.6,,65.5,6.4,,,,7.67,-77.75,1460
+Hyospathe,elegans,Croat,233,37841,mo,panama,5,,,,,3.5,,,,,,,,,,,,0.86,36,,,7.67,-77.67,1450
+Hyospathe,elegans,Gentry,268,70216,mo,bolivia,3,,1.19,,,4,,,,,,23,37,,7.5,3,48.5,3.6,17,,,-13.83,-68.75,400
+Hyospathe,elegans,Hartshorn,269,2850,mo,peru,3,,0.6,11.5,6,1,2.3,,,13,4.5,30,50,,2,3,15,2.3,13,,,-10.42,-68.25,450
+Hyospathe,elegans,Smith,271,3682,mo,peru,5.5,,1.2,,40,1.8,,,,,,,,,,,,4,23,,,-10.2,-75.23,325
+Hyospathe,elegans,Gentry,272,54972,mo,ecuador,2,,1.24,,,2.5,,,,,,,,,,,,,14,10.1,4.8,0.17,-77.33,950
+Hyospathe,elegans,Smith,273,13043,mo,bolivia,1.5,,,,,3,2.5,,,,,,40,33,8,3,28,3,12,,,-17,-64.77,235
+Hyospathe,elegans,Grayum,275,9346,mo,ecuador,2.5,,,,24,4.2,7.5,,,24,11,35,65,43,4.5,3,43,5.2,,,,0.17,-79.05,600
+Hyospathe,elegans,Davidson,276,5221,mo,peru,2,,0.83,,5,2,,,,,,27,18,39,9,2,36,3.4,14,,,-3.5,-73.25,150
+Hyospathe,elegans,Davidson,277,5315,mo,peru,2.5,,0.78,,10,4,,,,,,,30,,,,,4.4,15,,,-3.42,-73.25,150
+Hyospathe,elegans,Vasquez,278,14484,mo,peru,1,,0.75,12.5,,2.2,,,,28,,21,20,,,1,25,2.3,14,,,-3.53,-73.17,
+Hyospathe,elegans,Espinoza,279,130,mo,ecuador,2,,0.79,,9,1.3,,,,,,,60,,,3,35,2.3,12,,,-0.73,-76.87,390
+Hyospathe,elegans,Rudas,280,2949,mo,colombia,3,,,,16.5,6.5,,,,,,,,,,4,53,4,22,,,-3.78,-70.25,120
+Hyospathe,elegans,Rudas,281,2412,mo,colombia,3,,1.08,,15.5,2.3,,,,27,10.5,27,37,38,9,5,50.5,4,27,,,-3.03,-70,100
+Hyospathe,elegans,Rudas,297,3072,mo,colombia,3,,1.62,,19,6,,,,29,16,27,50,52,10,5,65,4.1,35,6.4,3,-3.74,-70.25,115
+Hyospathe,elegans,Smith,298,13042,mo,bolivia,1.5,,,,,2.2,,,,21,,23,25,,,1,22,2.5,11,,,-17,-64.77,235
+Hyospathe,elegans,Diaz,303,87,mo,peru,1.2,,0.76,,5.5,3.3,,,,,,,,,,3,32.5,4,,,,-3.5,-73.33,130
+Hyospathe,elegans,Palacios,306,667,mo,ecuador,5,,,,34.5,,,,,,,,,,,,79,6.8,,,,-1.48,-76.65,250
+Hyospathe,elegans,Smith,307,1923,mo,peru,3,,1.02,,19,2,10.5,,,,,,60,,6.5,3,,4.7,,8.2,6.3,-10.2,-75.22,430
+Hyospathe,elegans,Smith,309,8437,mo,peru,2,,0.88,20.5,12.5,2.2,,,,,10,28,52,,4,3,38.5,3.3,15,6.2,5,-10.3,-75.17,425
+Hyospathe,elegans,Palacios,310,5532,mo,ecuador,3,,,,30.5,,,,,,,,,,,,,6.2,,,,-0.13,-77.47,1300
+Hyospathe,elegans,Vazquez,311,4532,mo,peru,2,,1.19,,,4.7,,,,,,,,,,,,,11,,,-2.92,-76.42,180
+Hyospathe,elegans,Croat,312,18473,mo,peru,2,,1.24,,,4.5,,,,35,11.5,20,25,,,3,52.5,4.3,16,11.4,6.3,-3.75,-73.25,
+Hyospathe,elegans,Pipoly,313,12675,mo,peru,,,1.18,16.5,11,2.8,6.5,,,27,10,16,20,49.5,10,4,46.5,3.2,22,,,-3.92,-73.58,90
+Hyospathe,elegans,Croat,314,20777,mo,peru,1.7,,0.69,11.5,8.3,2,,,,,,,,,,3,,2.9,12,,,,,
+Hyospathe,elegans,Espinoza,315,290,mo,ecuador,1.3,,,,22,,,,,,10,25,48,,7,,,4,37,,,-1.72,-76.82,320
+Hyospathe,elegans,Vazquez,316,10640,mo,peru,2,,0.53,10,9.5,1.6,3.7,,,14,3,25,55,18.5,3.4,3,16,2,6,,,-3.7,-72.83,115
+Hyospathe,elegans,Vazquez,317,4746,mo,peru,2,,,,25.5,4.7,,,,,,,,,,3,57,4.1,,,,-5.08,-73.83,180
+Hyospathe,elegans,Vazquez,318,8529,mo,peru,2,,1.18,,12,,,,,,,,,,,,,,,,,-4.48,-73.58,150
+Hyospathe,elegans,Gentry,319,31362,mo,peru,1.5,,0.69,,,2.4,6,,,17.5,4.5,34,55,27,3.6,3,26,2.8,10,,,-3.47,-72.8,130
+Hyospathe,elegans,Gentry,320,65618,mo,peru,,,1.21,,11,4,,,,,,,20,,,,,,,,,-3.83,-73.42,140
+Hyospathe,elegans,Gentry,321,37929,mo,peru,3,,,,19,3.3,,,,,11,20,40,,,4,53,6,45,,,-6.33,-76.33,580
+Hyospathe,elegans,Vazquez,322,1979,mo,peru,3,,1.09,,5,4.7,,,,,,,,,,,,,10,10.7,8,-2.92,-76.42,210
+Hyospathe,elegans,Gentry,323,36576,mo,peru,1.5,,1.07,13,13.5,3,6.5,,,,,,68,,3.4,,,2.6,12,,,-3.37,-72.83,120
+Hyospathe,elegans,Neill,324,8969,mo,ecuador,2,,,,,,,,,,,,,,,,,,,,,-1.25,-76.92,320
+Hyospathe,elegans,Vazquez,325,2159,mo,peru,2,,,,,6,,,,,,,,,,5,38.5,3.7,28,13.1,4.8,-4.83,-73.75,170
+Hyospathe,elegans,Gentry,326,29730,mo,peru,2,,1.31,,,2.5,,,,,,,,,,,,,31,,,-2.8,-76.47,210
+Hyospathe,elegans,Gentry,327,55961,mo,peru,3,,,,9,,6.5,,,33.5,5.8,23,32,45,10.5,3,37.5,3,,,,-3.5,-73.03,130
+Hyospathe,elegans,Gentry,328,56326,mo,peru,3,,0.74,14,15,2.2,7,,,,,,25,40,6.5,3,29,2.7,14,,,-4.92,-73.75,
+Hyospathe,elegans,Gentry,329,76979,mo,peru,3,,,,,3.4,,,,,,,,,,,,,19,,,-13.5,-69.83,500
+Hyospathe,elegans,Vazquez,330,699,mo,peru,3,,,,10,4.5,,,,,,,,,,,,,21,,,-3.92,-73.92,130
+Hyospathe,elegans,Schunke,331,10243,mo,peru,2.5,,0.99,24.5,,,,,,,,,,,,,,,,,,-8.17,-76.42,525
+Hyospathe,elegans,Pena,332,35,mo,peru,3,,1.13,,14,4.5,,,,,,,,,,,,4.5,17,,,-4,-77.75,180
+Hyospathe,elegans,Berlin,333,3568,mo,peru,,,1.8,,23,3.5,,,42,,,,50,,,3,60.5,5.8,,,,-4,-77.75,180
+Hyospathe,elegans,Gentry,334,74272,mo,peru,4,,,,,3.5,6.5,,,,16,22,52,,7.4,4,53.5,4.8,23,,,-3.25,-72.92,130
+Hyospathe,elegans,Schunke,336,10809,mo,peru,2.25,,,,19.5,,,,,,,,40,,,,,6.4,,,,-8.25,-76.25,490
+Hyospathe,elegans,Gentry,337,17005,mo,colombia,6,,,,,,,,,,,,,,,,,,,,,,,1450
+Hyospathe,elegans,Rudas,338,3023,mo,colombia,2,,,,,,,,,,,,,,,,,,,,,-3.78,-70.25,122
+Hyospathe,elegans,Vasquez,339,570,mo,peru,2,,,,11,4,6,,,,5,32,,,,3,26,3.2,8,,,-3.5,-72.83,106
+Hyospathe,elegans,Vazquez,340,1799,mo,peru,1,,0.84,15.8,6.5,3.1,,,,,,,,,,,,,23,,,-3.92,-73.58,150
+Hyospathe,elegans,Vazquez,341,695,mo,peru,3,,,,10,3.5,,,,,,,,,,,,,20,,,-3.92,-73.92,130
+Hyospathe,elegans,Diaz,342,1081,mo,peru,2.5,,0.78,,14.5,,,,,,,,,,,,,,,11.1,7.2,-3.83,-73.5,130
+Hyospathe,elegans,Gentry,343,58570,mo,peru,2,,0.7,15.5,7,,3.5,,,,,,43,,5.5,,23,3,,,,-8.03,-73.92,250
+Hyospathe,elegans,Knapp,344,8129,mo,peru,3.5,,1.32,,17,5.1,,,,,,,,,4,6,47.5,4.4,20,,,-6.17,-76.27,200
+Hyospathe,elegans,Neill,346,8979,mo,ecuador,,2,1.68,,,4.2,,,,,,,,,,,,,,,,-1.25,-76.92,320
+Hyospathe,elegans,Foster,347,8831,mo,peru,3,,,,,,3,,,,17,20,37,37,5,,,6.2,,,,-9.3,-74.97,275
+Hyospathe,elegans,Vazquez,348,1927,mo,peru,4,,1.39,,9.5,3,4.5,,,,,21,47,,13,3,45.5,3.9,8,1.5,8.4,-2.92,-76.42,210
+Hyospathe,elegans,Grandez,349,777,mo,peru,2,,,,9,,,,,,,,,,,1,,3.2,,,,-4.17,-73.5,125
+Hyospathe,elegans,Freire,350,350,mo,peru,2,,,,,,,,,,,,,,,,,,,,,-0.75,-77.52,1050
+Hyospathe,elegans,Zak,351,4534,mo,ecuador,3,,,,,,,,,,,,,,,,,,,,,-1.82,-76.7,260
+Hyospathe,elegans,Zak,352,4842,mo,ecuador,4,,,,,,,,,,,,,,,,,,,,,-1.53,-76.85,300
+Hyospathe,elegans,Gudino,353,414,mo,ecuador,1.5,,0.7,16,18.5,,,,,,,,,,,3,43,2.9,,,,-0.73,-76.87,400
+Hyospathe,elegans,Gentry,354,19007,mo,peru,2.5,,1.36,,,5,,,,,,,,,,,,,,,,-2.25,-76.25,210
+Hyospathe,elegans,Gentry,355,21062,mo,peru,,,0.92,,,,,,,,,,,,,,,,,,,-3.75,-73.25,130
+Hyospathe,elegans,Gentry,356,36378,mo,peru,2,,,,,,,,,,,,,,,,,,,,,-8.75,-75.03,270
+Hyospathe,elegans,Gentry,357,80958,mo,ecuador,1.5,,0.68,,,,,,,,,,,,,,,,,,,-4.3,-78.67,890
+Hyospathe,elegans,Vazquez,358,7423,mo,peru,2,,0.59,11,3.5,2.5,,,,,,24,27,43,,1,19,3.1,7,,,-3.83,-74.17,150
+Hyospathe,elegans,Freire,359,2188,mo,ecuador,,,,,,3,,,,,,,,,,,,,,7.9,5.1,0,-77.2,250
+Hyospathe,elegans,Kujikat,360,10,mo,peru,6,,1.14,,,,,,,,,,,,,,,,,,,-4.5,-78.5,225
+Hyospathe,elegans,Vazquez,362,6857,mo,peru,1.5,,0.83,14.5,9.5,3.3,,,,,,,,,,3,43.5,3.5,18,,,-3.8,-73.35,122
+Hyospathe,elegans,Gudino,363,1373,mo,ecuador,1.5,,,,,,,,,,,,,,,,,,,,,-1.5,-78.5,500
+Hyospathe,elegans,Gentry,364,28016,mo,peru,1.5,,0.88,13.5,12,2.4,,,,,,,,,,3,27,2.2,10,11,5.4,-3.25,-72.75,130
+Hyospathe,elegans,Gentry,365,39722,mo,peru,1.5,,,,,,,,,,,,,,,,,,,,,-3.47,-72.83,130
+Hyospathe,elegans,Gentry,368,29750,mo,peru,2,,,,,,,,,,,,,,,,,,,,,-2.8,-76.47,210
+Hyospathe,elegans,Cornejo,369,2791,mo,peru,2.8,,,,24,5,,,,,2.5,16,55,29,0.5,17,63.5,5.2,33,,,-13.55,-69.66,1025
+Hyospathe,elegans,Pipoly,370,12663,mo,peru,2.5,,0.68,,14,3.5,,,,30,,28,27,49,,1,21.5,2.8,16,,,-3.92,-73.59,90
+Hyospathe,elegans,Gentry,371,42132,mo,peru,2.3,,0.51,,18.5,1.1,2.7,,,16,3,22,57,21,1,13,31,2.3,13,,,-10.17,-74.83,200
+Hyospathe,elegans,Foster,372,7364,mo,peru,3.5,,,,,5,3.5,,,22,9,18,90,36,0.4,,,6.1,44,,,-12.92,-71.2,875
+Hyospathe,elegans,Palacios,373,5532,mo,ecuador,3,,,,,,,,,,,,,,,,,,,,,-0.13,-77.47,1300
+Hyospathe,elegans,Schunke,374,6646,mo,peru,3.5,,1.58,,17.5,3.5,,,,,,,,,,,,,12,,,-8.25,-76.5,360
+Hyospathe,elegans,Aulestia,375,285,mo,ecuador,3,,,,,,,,,,,,,,,,,,,,,-0.55,-76.5,250
+Hyospathe,elegans,Liesner,376,24304,mo,venezuela,1.3,,0.87,,15,2.6,,,,,,,40,50,7.5,3,46.5,3.5,13,8.8,5,5,-61.17,850
+Hyospathe,elegans,Liesner,377,19252,mo,venezuela,2,,,,,,,,,,,,,,,,,,,,,4.5,-61.5,850
+Hyospathe,elegans,Morillo,378,9037,mo,venezuela,1.5,,,,14,,,,,30.5,11,24,52,50,7.5,3,44,4.4,,11.8,6.6,6.23,-64.4,240
+Hyospathe,elegans,Aymard,379,4840,mo,venezuela,4,,,,,,,,,,,,,,,,,,,,,4.67,-61.55,975
+Hyospathe,elegans,Freire,380,496,mo,ecuador,3,,,,,,,,,,,,,,,,,,,,,-0.88,-77.55,1400
+Hyospathe,elegans,Foster,381,7856,mo,peru,,3,,,14.5,3.5,,,,21,9,30,37,35.5,6.5,3,42,3.6,24,,,-10.2,-75.25,380
+Hyospathe,elegans,Foster,382,8628,mo,peru,4.5,,6.3,14,,2,2.5,,,19,4.3,26,65,20,1.7,6,27.5,3,19,,,-10.33,-75,700
+Hyospathe,elegans,Ortiz,383,95,mo,peru,2,,,,15,3,7.4,,,,9,35,50,27,4.5,3,33,2.6,9,,,-3.25,-72.92,140
+Hyospathe,elegans,Gentry,384,29631,mo,peru,2,,,,,,,,,,,,,,,,,,,,,-2.8,-76.57,210
+Hyospathe,elegans,Diaz,386,1357,mo,peru,3,,,,17,,,,,,,,,,,,,7.2,,8.8,5.2,-2.83,-76.47,210
+Hyospathe,elegans,Vazquez,387,23294,mo,peru,4,,1.32,,7,4.3,,,,,,,15,,,1,,7,37,,,-4.12,-72.92,116
+Hyospathe,elegans,Schunke,388,10244,mo,peru,3.5,,2.12,,,2.5,,11,12,,,,,,,,,,19,,,-8.42,-76.42,525
+Hyospathe,elegans,Gentry,389,42004,mo,peru,3,,1.25,,18,2.1,,,,,,,,,,5,50.5,4.1,,8.5,6.3,-10.42,-75,550
+Hyospathe,elegans,Smith,390,1934,mo,peru,2,,0.72,,16.5,,,,,,,,,,,3,24,2.9,,,,-10.2,-75.22,430
+Hyospathe,elegans,Smith,391,1936,mo,peru,2.5,,1.06,,12,2.5,10,,31,21.5,6.5,34,50,33,5.5,4,41.5,3.6,,,,-10.2,-75.22,430
+Hyospathe,elegans,Smith,392,1994,mo,peru,2.2,,0.73,,12.5,3,4,,,24,4.5,35,54,26,3.5,5,29,3.4,14,11.1,6.4,-10.18,-75.2,525
+Hyospathe,elegans,Ceron,393,1711,mo,ecuador,3,,,,,,,,,,,,,,,,,,,,,-1.07,-77.6,450
+Hyospathe,elegans,Ceron,394,2097,mo,ecuador,3,,,,10.7,,,,,,,,,,,3,,4.4,,,,-1.07,-77.6,450
+Hyospathe,elegans,Smith,395,1930,mo,peru,2.5,,1.21,,17,2.2,,,,,,,,,,,,,17,,,-10.2,-75.22,430
+Hyospathe,elegans,Foster,396,8837,mo,peru,2.5,,,,,,5,,,,,,40,,11,,,4.9,,,,-9.3,-74.97,275
+Hyospathe,elegans,Davidson,397,5221,mo,peru,2,,0.84,,8.5,2.4,,,,24,,23,18,50,,2,35.5,3.4,17,,,-3.5,-73.25,150
+Hyospathe,elegans,Huashikat,398,109,mo,peru,,,,,,,,,,,,,,,,,,,,,,,,
+Hyospathe,elegans,Vazquez,399,7837,mo,peru,2,,0.81,,,,,,,,,,,,,,,,,,,-3.58,-73.25,106
+Hyospathe,elegans,Barclay,400,9443,mo,colombia,,,,,,,,,,,,,,,,,,,,,,1.25,-76.75,1700
+Hyospathe,elegans,Gentry,401,15826,mo,peru,4,,1.02,18.5,14.3,6.3,,,,,,,,,,,,,,,,-3.5,-73.25,150
+Hyospathe,elegans,Neill,402,6699,mo,ecuador,3.5,,1.4,,,3,,,,,,,,,,,,,10,1.36,7.9,-1.48,-76.65,250
+Hyospathe,elegans,Vazquez,403,3595,mo,peru,2,,,,,,,,,,,,,,,,,,,,,-4.17,-73.33,150
+Hyospathe,elegans,Gentry,404,31614,mo,peru,,,,,,,,,,,,,,,,,,,,,,,,
+Hyospathe,elegans,Gentry,405,31203,mo,peru,,,1.42,,,,,,,,,,,,,,,,,,,-8.68,-75,250
+Hyospathe,elegans,Gentry,406,29152,mo,peru,2,,0.83,12.3,9.5,,,,,,,,,,,,,,,,,-3.47,-75.8,120
+Hyospathe,elegans,Liesner,407,18928,mo,venezuela,2,,0.94,22.5,20.5,,,,,,,,,,,,,,,,,4.38,-61.63,520
+Hyospathe,elegans,Ceron,408,9228,mo,ecuador,4,,,,,,,,,,,,,,,,,,,,,0.23,-77.22,1050
+Hyospathe,elegans,Smith,409,13655,mo,bolivia,,2.2,0.85,,8.5,2.6,4.7,,,,11.5,,35,,8.2,3,39.5,4.3,19,9.1,4.9,-17,-64.77,290
+Hyospathe,elegans,Vazquez,410,8995,mo,peru,2,,0.85,,,,,,,,,,,,,,,,,,,-4.48,-73.58,200
+Hyospathe,elegans,Smith,411,3861,mo,peru,,3,1.36,,14.5,2.5,7.3,,,30,10.5,25,38,35,6.3,4,43,4,22,7,5.4,-10.2,-75.22,300
+Hyospathe,elegans,de Nevers,121,8837,ny,panama,,5,,,,6.1,,,,24.8,,20,29,,,10,81,7.2,9,15.6,5.5,8.92,-82.08,250
+Hyospathe,elegans,Grayum,129,8784,ny,costa rica,,4,,35,26,2.3,6.7,37,32.5,,20.5,35,60,50,5,8,94,8.5,20,,,10.03,-83.45,420
+Hyospathe,elegans,Moore,222,6544,bh,costa rica,,6.5,1.13,32,20,,1.9,,,24,3,19,45,21.5,0.3,26,91.5,7.7,,,,9,-83.37,640
+Hyospathe,elegans,de Nevers,228,7765,mo,costa rica,,3,1.17,24.3,35,1.8,2.5,26.7,,23.5,2.8,24,57,29.5,0.4,24,71,2.9,20,,,8.78,-82.97,1150
+Hyospathe,elegans,Grayum,229,5969,mo,costa rica,5,,1.68,30,32.5,2.6,1.5,,,,2.5,23,55,,0.5,24,70.5,6.1,37,,,8.78,-82.97,1180
+Hyospathe,elegans,Vasquez,27,13073,ny,peru,1.5,,0.66,14,3.5,2.5,,,,,,22,10,70,,1,37.5,3.8,9,,,-3.33,-72.92,116
+Hyospathe,elegans,Vazquez,51,11814,ny,peru,1.5,,0.87,11,1,3.5,,,,26,,25,11,80,,1,41,,9,12.1,4,-3.33,-72.92,130
+Hyospathe,elegans,Vazquez,52,11674,ny,peru,1,,0.8,13,2.8,3.7,,,,,,17,18,59,,1,29,4.4,8,,,-3.75,-72.92,110
+Hyospathe,elegans,Vazquez,53,11130,ny,peru,1.2,,0.61,11,5,,,11,,,,18,12,45,,1,18.5,2.6,11,,,-3.75,-72.92,110
+Hyospathe,elegans,Klug,138,181,ny,peru,1.5,,,,6,,,,,,,,17,,,1,,2.8,,,,,,100
+Hyospathe,elegans,Killip,139,29694,ny,peru,1.5,,0.81,,6.7,4.7,,,,,,,19,,,1,,2.5,13,11.6,5.9,-3.83,-73.5,110
+Hyospathe,elegans,Davis,165,871,ny,peru,2,,0.8,,,2.4,,,,,,,,,,,,,10,12,6.1,-3.33,-72,
+Hyospathe,elegans,Vasquez,274,13108,mo,peru,1.5,,1.07,,4,3.5,,,,,,20,10,,,1,48,4.1,10,,,-3.33,-72.92,116
+Hyospathe,elegans,Vazquez,301,4188,mo,peru,1.5,,0.77,10,2.5,2,,,,33,,25,23,55.5,,1,22.5,3.1,28,7.8,5,-4.28,-73.58,150
+Hyospathe,elegans,Vazquez,302,3758,mo,peru,2,,0.88,,1.5,4,,,,,,,,,,1,,,,,,-3.3,-72.92,130
+Hyospathe,elegans,Gentry,304,42723,mo,peru,3,,,,1.7,,,,,,,,16,,,2,,3.4,,10.9,6.5,-3.25,-72.92,130
+Hyospathe,elegans,Gentry,305,39577,mo,peru,2,,0.9,11,2.5,2.8,,,,,,,19,,,1,,,8,,,-3,-73.47,160
+Hyospathe,elegans,Gentry,308,54297,mo,peru,1.5,,0.82,,1.5,3,,,,21,,25,10,58,,1,37,3.1,9,11.9,6,-3.25,-72.92,140
+Hyospathe,elegans,Gentry,335,74312,mo,peru,1,,0.81,,1,4.8,5,,,,9,15,17,40,8,3,38,4.3,9,,,-3.25,-72.92,130
+Hyospathe,elegans,Gentry,361,42610,mo,peru,1.5,,0.74,,1.5,3.6,,,,30,,17,15,64,,1,36.5,3.8,10,,,-3.25,-72.92,150
+Hyospathe,elegans,Gentry,385,55707,mo,peru,1.5,,0.67,11.5,1.5,2.4,,,,20.5,,35,20,36,,1,18,2.2,11,,,-3.5,-73.03,130
+Hyospathe,elegans,de Nevers,122,9028,ny,panama,,3,,,,2.8,3.3,,,37.3,9.7,21,39,36.7,4.2,2,17.1,4,5,,,9.32,-78.92,300
+Hyospathe,elegans,de Nevers,126,5234,ny,panama,,4,0.72,,,,,10.5,,21.5,,15,18,33,,1,21.5,2.7,,,,9.32,-78.92,200
+Hyospathe,elegans,de Nevers,127,6941,ny,panama,,4,0.51,9.5,9.4,2.8,,8,,21,,23,25,28.5,,1,9,1.8,4,,,9.33,-79.13,450
+Hyospathe,elegans,de Nevers,128,6643,ny,panama,,4,,,,3.3,,5.4,,26.5,,20,20,38.5,,1,13,1.8,5,,,9.38,-78.85,415
+Hyospathe,elegans,Henderson,131,707,ny,panama,,3,0.83,16,7,,,7.7,,27.5,,18,25,48,,1,19.5,2.8,,,,9.33,-79,375
+Hyospathe,elegans,Henderson,132,729,ny,panama,,3.5,0.56,11,9,,,9.5,,31,,24,25,42,,1,13.2,1.8,,,,9.33,-79,
+Hyospathe,elegans,de Nevers,133,4714,ny,panama,,4,0.77,14.5,7.5,3,,8.5,,32.5,,16,27,49,,1,16.3,2.6,6,,,9.4,-79.13,80
+Hyospathe,elegans,de Nevers,135,5043,ny,panama,,4,0.6,10,6.8,3,,5.5,,24,,25,28,34.5,,1,11,1.9,4,10.6,5.3,9.32,-78.92,200
+Hyospathe,elegans,Mori,220,4116,bh,panama,2,,0.47,,5.5,4.3,,,,26,,21,25,37.5,,1,12,2.5,2,12.1,5.7,9.33,-79,400
+Hyospathe,elegans,de Nevers,234,7380,mo,panama,,3,0.8,10,8,,,8.5,,24.5,,17,30,,,1,21,2.7,,,,9.32,-78.92,200
+Hyospathe,elegans,de Nevers,235,7633,mo,panama,,4,0.65,13,7.5,,,9,,29,,22,20,,,1,20.5,2.5,,,,9.33,-79.17,
+Hyospathe,elegans,de Nevers,236,6941,mo,panama,,4,,,5.5,4.5,,,25,23.5,,30,30,,,1,13,2.2,3,,,9.33,-79.13,450
+Hyospathe,elegans,Herrera,237,1651,mo,panama,,2.5,0.79,16,7.5,3.8,,10.5,,27,,24,20,,,1,24.5,2.8,4,,,9.23,-78.25,130
+Hyospathe,elegans,de Nevers,238,8006,mo,panama,,3,0.51,14.5,7,2.1,,7.5,,27,,27,20,,,1,14,2.3,4,,,9.38,-78.8,200
+Hyospathe,elegans,de Nevers,239,7845,mo,panama,,3,0.59,9.3,5.8,,,5,,29,,18,20,,,1,14,2,,,,9.32,-78.92,200
+Hyospathe,elegans,de Nevers,240,3926,mo,panama,,3,0.62,11,6.6,2,,6,,22,,19,23,,,1,16.5,2,6,,,9.32,-78.92,350
+Hyospathe,elegans,Mori,241,2263,mo,panama,2,,0.43,8.5,7,2.8,,,,18.5,,20,30,,,1,13.7,2.1,3,,,9.25,-78.93,
+Hyospathe,elegans,Mori,242,6051,mo,panama,2,,0.46,9,8.4,3.2,,6.9,,22.8,,24,26,,,1,11.7,2.3,3,,,9.25,-79.33,750
+Hyospathe,elegans,Knapp,243,5915,mo,panama,1.5,,0.64,,5,2.6,,7.5,20,24,,20,35,,,1,10.5,1.9,5,9.6,6.4,9.23,-79,450
+Hyospathe,elegans,Sytsma,244,2659,mo,panama,2,,0.78,,6,3.4,,,,29,,16,25,,,1,16.5,2.4,6,,,9.38,-78.82,500
+Hyospathe,elegans,Knapp,246,5274,mo,panama,2.5,,0.6,14.5,8,2,,7.5,,,,22,30,,,1,13,2.3,4,,,9.42,-79.62,325
+Hyospathe,elegans,Herrera,345,1494,mo,panama,,1.5,0.76,16,12,4,,,,,,20,24,49,,1,27.5,4,5,,,9.35,-78.57,400
+Hyospathe,elegans,Balslev,46,62429,ny,ecuador,,1.5,0.63,9.2,3.5,2,,,,,,30,40,,,1,10,2.7,9,,,-1.5,-77.95,1080
+Hyospathe,elegans,Balslev,74,60659,ny,ecuador,,2,0.46,14,,,,3.3,,27,9,27,,,,,,,5,,,-2.25,-78.17,1350
+Hyospathe,elegans,Balslev,152,4419,ny,ecuador,,1,0.44,7.2,3,,,4,8,18.5,,26,37,30,,1,12.5,1.7,,,,-1.42,-77.83,1200
+Hyospathe,elegans,Gentry,270,80236,mo,ecuador,1,,0.43,13.5,10.5,,,,,,4.5,30,40,,11,2,19.5,2,6,,,-3.48,-79.23,1500
+Hyospathe,elegans,Neill,287,9092,mo,ecuador,1.3,,0.55,,4.5,3,,,,22.5,,30,45,,,1,10.5,2,10,,,-0.73,-77.58,1100
+Hyospathe,elegans,Betancur,102,3045,ny,colombia,1.7,,,,,,,,,,,17,,,,,,3,,12.2,5.5,5.28,-76.22,800
+Hyospathe,elegans,Bernal,169,1007,ny,colombia,,2,,18,24,,3.2,16.5,,20.5,12,27,54,28.5,3.3,3,40,4.8,,,,5.33,-76.5,250
+Hyospathe,elegans,Bernal,177,1091,ny,colombia,,2.5,0.88,15.5,16,8,3.2,,,,1.4,24,43,43,2,10,39,3.8,13,,,5.67,-76.58,
+Hyospathe,elegans,Gentry,198,47807,ny,colombia,3,,1.11,,19.5,10.4,4.5,,,34.5,8,28,53,,3.5,8,41,6.6,22,,,3.92,-77.03,100
+Hyospathe,elegans,Killip,225,35155,bh,colombia,,2.75,1.05,,18.5,,5.5,,,33,7,25,47,50.5,6,6,44,4,,,,5.1,-76.7,150
+Hyospathe,elegans,Gentry,226,26703,bh,ecuador,3,,,,,8,,,,,,,,,,,,,,12.8,5.9,-0.5,-79.25,650
+Hyospathe,elegans,Dodson,227,7598,bh,ecuador,3,,1.08,,14,,3.6,,,21,11,22,45,,4,5,43,4.9,,,,-0.25,-79.17,530
+Hyospathe,elegans,Monsalve,256,1038,mo,colombia,3,,1.36,,,9.5,,,,35,8.5,30,40,,7.5,,,5.8,21,,,3.92,-77,100
+Hyospathe,elegans,Monsalve,257,1298,mo,colombia,3,,,,,9.3,1.5,,,26,4,20,44,,0.7,,,5.5,17,,,3.92,-77,100
+Hyospathe,elegans,Monsalve,258,648,mo,colombia,3,,1.54,,,5.7,,,,,,,,,,,,,20,,,3.92,-77,100
+Hyospathe,elegans,Monsalve,259,538,mo,colombia,2.5,,1.43,12,,10.7,,,,30,11.5,23,,,,,,,,,,3.92,-77,100
+Hyospathe,elegans,Monsalve,260,238,mo,colombia,3,,,,,5.5,,,,,,,,,,,,5.4,20,,,3.92,-77,100
+Hyospathe,elegans,Croat,261,61376,mo,colombia,2.5,,,,,8,,,,,,,,,,,,,19,,,4.03,-77.12,50
+Hyospathe,elegans,Juncosa,262,1263,mo,colombia,2,,0.96,,19,8,7,,,26,4,20,43,49,13,3,30.5,5.8,13,,,5.2,-76.62,45
+Hyospathe,elegans,Dodson,264,12370,mo,ecuador,3,,1.23,,11.5,5.5,,,,,,,,,,3,,4.5,23,,,-0.58,-79.33,600
+Hyospathe,elegans,Dodson,265,7647,mo,ecuador,,,1.57,,,5.5,,,,,,,,,,,,,,,,-0.58,-79.33,600
+Hyospathe,elegans,Juncosa,266,953,mo,colombia,3,,1.34,,16.5,,,,,,,20,41,,,3,35,5.2,11,,,5.33,-76.66,75
+Hyospathe,elegans,Cabrera,267,6951,mo,colombia,,,,,17,7,,,,,,,26,,,,22,,5,,,3.17,-78.17,260
+Hyospathe,elegans,Gentry,289,53316,mo,colombia,4,,1.37,,,12,3,,,32,5.5,25,42,44,1.5,16,85,6.3,24,,,4.03,-77.37,50
+Hyospathe,elegans,Forero,290,7388,mo,colombia,3,,,,,7.4,3.5,,,,,,57,26,4,3,,2.9,18,,,5,-76.33,900
+Hyospathe,elegans,Gentry,294,14507,mo,ecuador,3,,1.65,,23.5,7.2,,,,26.5,14.5,20,70,,4,3,45,6.1,48,10.7,5.9,,,650
+Hyospathe,elegans,Gentry,295,40623,mo,colombia,2,,0.77,,,4.5,5,10.5,,,,,48,33,4,,32,4,,,,3.17,-77.37,60
+Hyospathe,elegans,Fonnegra,299,2002,mo,colombia,2.5,,,,,11,7,,,27,6,29,73,26,1.5,4,33,4.2,16,,,7.33,-76.5,180
+Hyospathe,elegans,Croat,366,71045,mo,colombia,,1.5,0.93,,,,,,,,,,,,,,,,,,,4.17,-77.2,52
+Hyospathe,elegans,Gentry,367,40627,mo,colombia,2,,1.18,,12,,,,,36,,,30,49,,1,27.5,5,,,,3.17,-77.37,60
+Hyospathe,frontinensis,Bernal,117,703,ny,colombia,2,,,13.7,20,,,,,,,,29,,,1,16,2.1,,,,6.75,-76.42,1350
+Hyospathe,frontinensis,Bernal,125,706,ny,colombia,,,,,,15.7,4.5,12,,21,12.5,24,39,29,5,2,22,3.3,4,,,6.75,-76.33,1350
+Hyospathe,frontinensis,Cogollo,250,3054,mo,colombia,,1.4,,,9.5,13.5,,10,30,26,,,33,,,1,17,3.3,3,,,6.53,-76.32,1240
+Hyospathe,frontinensis,Cogollo,251,3490,mo,colombia,,1.6,0.73,,9.5,11.5,,6,21.5,21.5,,26,26,,,1,13,2.6,3,,,6.57,-76.32,1440
+Hyospathe,frontinensis,Cogollo,252,4095,mo,colombia,,2.5,0.67,,11.5,16,,8.5,32,23.5,,24,40,,,1,18,2.7,2,,,6.53,-76.32,1360
+Hyospathe,frontinensis,Cogollo,253,2592,mo,colombia,,1.7,,,12.5,,,,,26,,27,30,,,1,26,3.7,5,,,6.53,-76.32,1420
+Hyospathe,frontinensis,Ramirez,254,4385,mo,colombia,,2.5,,,,18,,,,20,,24,,,,1,,,4,,,6.52,-76.32,1380
+Hyospathe,frontinensis,Pipoly,291,16677,mo,colombia,1,,0.86,,8.5,17.5,,12.5,38.5,21,,25,38,,,1,16.5,2.5,2,8.2,6.3,6.48,-76.23,1340
+Hyospathe,frontinensis,Pipoly,292,17672,mo,colombia,1.5,,0.84,,9.5,17,,,,33,,20,32,,,1,21.5,4.1,3,,,6.53,-76.32,1725
+Hyospathe,frontinensis,Pipoly,293,17408,mo,colombia,1.25,,0.66,,7,13.7,,,,23,,23,35,,,1,16,3,3,,,6.53,-76.32,1475
+Hyospathe,macrorachis,Balslev,210,60639,aau,ecuador,,0.4,1.04,12,33.5,21,7,,39,21,4,22,40,38.5,4.5,3,27.5,2.4,22,,,-3,-78.5,1850
+Hyospathe,macrorachis,Balslev,211,60647,aau,ecuador,,0.85,1.41,16,11.5,30,2.5,22.5,50,25.8,7,17,45,38,3.2,4,27.5,3.4,26,,,-3,-78.5,1850
+Hyospathe,macrorachis,Balslev,212,4412,aau,ecuador,,,1.05,15.5,36.5,28,7.1,24.5,,24.8,7.5,27,46,40.5,6.5,3,37.5,3.2,31,,,-3,-78.5,1850
+Hyospathe,macrorachis,Borchsenius,213,91428,aau,ecuador,,0.5,1.06,13,12,24.5,7.5,12,43,22.5,13.3,25,40,33,2.6,3,24,3,13,,,-3.02,-78.5,1850
+Hyospathe,macrorachis,Borchsenius,214,171,aau,ecuador,,0.9,,,20.5,,4.5,,,25.5,4,24,37,38,5.3,3,23,1.9,25,,,-3,-78.5,1600
+Hyospathe,macrorachis,Borchsenius,215,300,aau,ecuador,,1,,,18,,4.3,,,23.8,4.3,29,50,34.5,3,3,25.6,3.2,26,,,-3.02,-78.53,2100
+Hyospathe,macrorachis,Clark,282,3264,mo,ecuador,,0.2,1.19,,18,26,,,,22,,18,20,,,1,27.5,2.3,11,,,-4.08,-78.92,1100
+Hyospathe,macrorachis,Ceron,283,5783,mo,ecuador,,,,,12,,,,,29.5,,,30,,,1,28,3.2,,8.8,4,-0.75,-77.67,1200
+Hyospathe,macrorachis,Palacios,284,4206,mo,ecuador,,,,,8,,,,,26.5,,22,35,,,1,26.5,3.2,,6.6,6.9,-0.72,-77.57,1100
+Hyospathe,macrorachis,Dodson,285,10474,mo,ecuador,,,,,,,,,,,,20,38,,,3,,,34,,,,,1600
+Hyospathe,macrorachis,Smith,286,4418,mo,peru,,0.2,0.76,,6.5,,,,,17.5,,26,26,,,1,17,2,11,,,-5.83,-77.75,1800
+Hyospathe,peruviana,Sullivan,99,1180,ny,peru,1.5,,0.95,,7.5,4.5,2,,,,3.7,24,40,29.9,1.7,5,21,3,18,,,-9.17,-75.8,1500
+Hyospathe,peruviana,Smith,100,4455,ny,peru,1.6,,0.66,,5.5,2,2.5,,,20.5,,27,40,26,4.5,2,17.5,2.4,29,,,-5.83,-77.75,1750
+Hyospathe,peruviana,Schunke,101,9385,ny,peru,2.25,,0.94,,,5,3.7,,,23.4,5.4,26,55,,2.1,3,18.5,2.9,23,9.5,7.3,-9.25,-75.75,1550
+Hyospathe,peruviana,Schunke,221,9839,bh,peru,2.5,,0.62,13.5,8,3.3,2.8,11.5,22,21.5,4,25,43,33,2.5,3,18.5,2.2,23,,,-9.17,-75.75,1550
+Hyospathe,peruviana,Gentry,288,45224,mo,peru,0.5,,0.66,13,9.5,2,,,,18,,30,30,,,1,14,2.1,34,8,6.8,-5.75,-77.67,1850
+Hyospathe,pittieri,Meier,10,4603,ny,venezuela,,,,,23.4,5.1,5,,,27.5,7.5,17,51,50.7,2,13,64,6.6,,,,9.98,-68.62,1645
+Hyospathe,pittieri,Steyermark,21,103337,ny,venezuela,,3.5,1.93,,18.5,5.8,2.1,,,30,9,13,36,37.5,1.6,20,71,6.5,51,14.2,6.2,9.92,-69.25,1150
+Hyospathe,pittieri,Steyermark,43,114169,ny,venezuela,,6,,,15,3.5,5,,,,,,34,37.5,2,,,5.5,31,,,10.22,-68.48,1200
+Hyospathe,pittieri,Moore,67,9841,ny,venezuela,6.6,,2.01,,15,8.2,4.5,,,,,,47,43.8,0.8,21,105,10.3,50,10.6,6.6,10.37,-67.68,1330
+Hyospathe,pittieri,Licata,68,748,ny,venezuela,6,,1.74,,20,4,3.3,,,,,,50,,1.6,,,7,28,12.5,6.6,9.48,-69.57,1100
+Hyospathe,pittieri,Noblick,112,4938,ny,venezuela,,4.5,,,17,5,3.7,,,30,8,13,46,43,0.9,19,80,7.6,40,13.6,5,10.17,-69.97,1500
+Hyospathe,pittieri,Steyermark,113,118914,ny,venezuela,,6,,,,4,4,,,,6,11,40,50.5,1,,,7.6,,,,7.6,-72.22,1200
+Hyospathe,pittieri,Bunting,114,12102,ny,venezuela,,8,2.16,,,5,3.5,,,,11,15,90,,1,,,8.8,,,,10.78,-72.67,1525
+Hyospathe,pittieri,Meier,115,4604,ny,venezuela,,5,,,22,5.1,4,,,37,11,20,53,58,1.2,,,10.8,,,,9.98,-68.62,1645
+Hyospathe,pittieri,Wessels Boer,116,2460,ny,venezuela,,5,,35,25,4,2.2,,,,,,57,32,0.5,27,100,9,45,12.5,7.3,9.83,-72.83,1100
+Hyospathe,pittieri,Braun,223,,bh,venezuela,7,,2.29,30,11.5,5.8,3,,,25.5,8.5,12,46,37,1,,,8.6,,,,10.25,-66.58,
+Hyospathe,pittieri,Delascio,224,2962,bh,venezuela,5,,,,33,3,5,,,,,,48,,1,,,8.9,40,9.7,7.2,,,1400
+Hyospathe,wendlandiana,Daly,182,5353,ny,colombia,,,0.92,16,4.5,3,,,,,4.5,27,,,,11,26.5,3.4,24,,,6.02,-75.02,1600
+Hyospathe,wendlandiana,Daly,196,5902,ny,colombia,4,,0.79,,6.5,3.3,6.5,,,21,7.5,25,55,36.5,2.6,3,28,2.6,25,,,6.02,-75.02,1600
+Hyospathe,wendlandiana,Fonnegra,300,4479,mo,colombia,1.5,,,,29,3.4,4,,,22,7.5,25,60,26,4.5,5,37,4.1,25,,,6.92,-75.07,1490
