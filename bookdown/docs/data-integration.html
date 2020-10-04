@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Data integration | Integration and harmonization of trait data from plant individuals across heterogeneous sources</title>
+  <meta name="description" content="Chapter 3 Data integration | Integration and harmonization of trait data from plant individuals across heterogeneous sources" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Data integration | Integration and harmonization of trait data from plant individuals across heterogeneous sources" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Data integration | Integration and harmonization of trait data from plant individuals across heterogeneous sources" />
+  
+  
+  
+
+<meta name="author" content="Tim P. Lenters, Andrew Henderson, Caroline M. Dracxler, Guilherme A. Elias, Suzanne Mogue, Thomas L.P. Couvreur &amp; W. Daniel Kissling" />
+
+
+<meta name="date" content="2020-10-04" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="thesauri.html"/>
+<link rel="next" href="output-tables.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Integration and harmonization of trait data from plant individuals across heterogeneous</a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="form.html"><a href="form.html"><i class="fa fa-check"></i><b>1</b> Metadata form</a><ul>
+<li class="chapter" data-level="1.1" data-path="form.html"><a href="form.html#how-to-fill-out-the-form"><i class="fa fa-check"></i><b>1.1</b> How to fill-out the form</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="form.html"><a href="form.html#dataset-information"><i class="fa fa-check"></i><b>1.1.1</b> Dataset information</a></li>
+<li class="chapter" data-level="1.1.2" data-path="form.html"><a href="form.html#matching-column-headers"><i class="fa fa-check"></i><b>1.1.2</b> Matching column headers</a></li>
+<li class="chapter" data-level="1.1.3" data-path="form.html"><a href="form.html#propose-new-terms"><i class="fa fa-check"></i><b>1.1.3</b> Propose new terms</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="form.html"><a href="form.html#exporting-data-and-changing-features"><i class="fa fa-check"></i><b>1.2</b> Exporting data and changing features</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="form.html"><a href="form.html#exporting-data-output"><i class="fa fa-check"></i><b>1.2.1</b> Exporting data (output)</a></li>
+<li class="chapter" data-level="1.2.2" data-path="form.html"><a href="form.html#changing-crs-list-coordinates"><i class="fa fa-check"></i><b>1.2.2</b> Changing CRS-list (coordinates)</a></li>
+<li class="chapter" data-level="1.2.3" data-path="form.html"><a href="form.html#editing-term-uris-uris"><i class="fa fa-check"></i><b>1.2.3</b> Editing term-URIs (URIs)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="thesauri.html"><a href="thesauri.html"><i class="fa fa-check"></i><b>2</b> Metadata thesauri</a><ul>
+<li class="chapter" data-level="2.1" data-path="thesauri.html"><a href="thesauri.html#integrating-metadata-form-output"><i class="fa fa-check"></i><b>2.1</b> Integrating metadata form output</a></li>
+<li class="chapter" data-level="2.2" data-path="thesauri.html"><a href="thesauri.html#adding-new-terms"><i class="fa fa-check"></i><b>2.2</b> Adding new terms</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="thesauri.html"><a href="thesauri.html#metadata-thesaurus"><i class="fa fa-check"></i><b>2.2.1</b> Metadata thesaurus</a></li>
+<li class="chapter" data-level="2.2.2" data-path="thesauri.html"><a href="thesauri.html#units-thesaurus"><i class="fa fa-check"></i><b>2.2.2</b> Units thesaurus</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="data-integration.html"><a href="data-integration.html"><i class="fa fa-check"></i><b>3</b> Data integration</a><ul>
+<li class="chapter" data-level="3.1" data-path="data-integration.html"><a href="data-integration.html#spreadsheet-preparation"><i class="fa fa-check"></i><b>3.1</b> Spreadsheet preparation</a></li>
+<li class="chapter" data-level="3.2" data-path="data-integration.html"><a href="data-integration.html#loading-and-preparing-input-data"><i class="fa fa-check"></i><b>3.2</b> Loading and preparing input data</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="data-integration.html"><a href="data-integration.html#installing-and-loading-packages"><i class="fa fa-check"></i><b>3.2.1</b> Installing and loading packages</a></li>
+<li class="chapter" data-level="3.2.2" data-path="data-integration.html"><a href="data-integration.html#validate-dataset-and-metadata-thesaurus"><i class="fa fa-check"></i><b>3.2.2</b> Validate dataset and metadata thesaurus</a></li>
+<li class="chapter" data-level="3.2.3" data-path="data-integration.html"><a href="data-integration.html#loading-thesauri-and-preperation"><i class="fa fa-check"></i><b>3.2.3</b> Loading thesauri and preperation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="data-integration.html"><a href="data-integration.html#integrating-datasets"><i class="fa fa-check"></i><b>3.3</b> Integrating datasets</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="output-tables.html"><a href="output-tables.html"><i class="fa fa-check"></i><b>4</b> Output tables</a><ul>
+<li class="chapter" data-level="4.1" data-path="output-tables.html"><a href="output-tables.html#taxon-extension"><i class="fa fa-check"></i><b>4.1</b> Taxon extension</a></li>
+<li class="chapter" data-level="4.2" data-path="output-tables.html"><a href="output-tables.html#measurement-or-fact-extension"><i class="fa fa-check"></i><b>4.2</b> Measurement or Fact extension</a></li>
+<li class="chapter" data-level="4.3" data-path="output-tables.html"><a href="output-tables.html#occurrence-extension"><i class="fa fa-check"></i><b>4.3</b> Occurrence extension</a></li>
+<li class="chapter" data-level="4.4" data-path="output-tables.html"><a href="output-tables.html#core-table"><i class="fa fa-check"></i><b>4.4</b> Core table</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Integration and harmonization of trait data from plant individuals across heterogeneous sources</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-integration" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> Data integration</h1>
+<p>This chapter explains the different steps of the automated integration R-script. This script can be downloaded from the <a href="https://github.com/tlenters/traitData">Github-page for this project</a>.</p>
+<div id="spreadsheet-preparation" class="section level2">
+<h2><span class="header-section-number">3.1</span> Spreadsheet preparation</h2>
+<p>Besides the two thesauri (chapter 2), the R-script also requires the plant trait spreadsheets containing all measurement data as input. A few requirements have to be met to make these spreadsheet suitable for integration:</p>
+<ul>
+<li>All spreadsheets have to be comma-seperated value (<code>.csv</code>) files. If not the case, these can easily be converted from e.g. Excel files.</li>
+<li>All values in columns assigned to the “trait” category should be in the same unit of measurement (e.g. not one value in meters and the next in centimeters).</li>
+<li>Columns assigned to the “trait” category should only contain numeric values. If the measurement unit is also give within a value cell, it should be removed. The unit of a certain column should be specified through the units thesaurus only.</li>
+<li>Within each individual spreadsheet, the use of decimal seperators should be consistent (not ‘,’ in one and ‘.’ in another column).</li>
+</ul>
+</div>
+<div id="loading-and-preparing-input-data" class="section level2">
+<h2><span class="header-section-number">3.2</span> Loading and preparing input data</h2>
+<div id="installing-and-loading-packages" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Installing and loading packages</h3>
+<p>The following script checks if the required packages for this script are installed, and installs those that are missing. Packages are then loaded, the working directory is set and the validation function is sourced.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">ls &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;readxl&quot;</span>,<span class="st">&quot;data.table&quot;</span>,<span class="st">&quot;dplyr&quot;</span>,<span class="st">&quot;reshape2&quot;</span>,<span class="st">&quot;traitdataform&quot;</span>,<span class="st">&quot;stringr&quot;</span>,<span class="st">&quot;rgdal&quot;</span>,<span class="st">&quot;Taxonstand&quot;</span>,<span class="st">&quot;tidyverse&quot;</span>,<span class="st">&quot;rangeBuilder&quot;</span>)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">new.packages &lt;-<span class="st"> </span>ls[<span class="op">!</span>(ls <span class="op">%in%</span><span class="st"> </span><span class="kw">installed.packages</span>()[,<span class="st">&quot;Package&quot;</span>])]</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="cf">if</span>(<span class="kw">length</span>(new.packages)) <span class="kw">install.packages</span>(new.packages)</a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="kw">library</span>(readxl)</a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="kw">library</span>(data.table)</a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="kw">library</span>(reshape2)</a>
+<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="kw">library</span>(traitdataform)</a>
+<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="kw">library</span>(stringr)</a>
+<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="kw">library</span>(rgdal)</a>
+<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="kw">library</span>(Taxonstand)</a>
+<a class="sourceLine" id="cb1-13" data-line-number="13"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb1-14" data-line-number="14"></a>
+<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="kw">setwd</span>(<span class="st">&quot;~/traitData&quot;</span>)</a>
+<a class="sourceLine" id="cb1-16" data-line-number="16"><span class="kw">source</span>(<span class="st">&quot;validation_script.R&quot;</span>)</a></code></pre></div>
+</div>
+<div id="validate-dataset-and-metadata-thesaurus" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Validate dataset and metadata thesaurus</h3>
+<p>This function checks if all datasets are in the right format for the workflow and that the metadata thesaurus is filled out correctly. In the case of common mistakes (as in Fig. 2 of the manuscript) the name of the dataset and column header is given. It is also checked if column headers entered in the metadata thesaurus are present in each dataset.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">validate_metadata</span>()</a></code></pre></div>
+</div>
+<div id="loading-thesauri-and-preperation" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> Loading thesauri and preperation</h3>
+<p><code>read_excel()</code> is used to load in both thesauri. Therefore, they don’t have to be converted to <code>.csv</code> files like the measurement spreadsheets.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">metadata &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;thesauri/metadata.xlsx&quot;</span>)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">units &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;thesauri/units.xlsx&quot;</span>)</a></code></pre></div>
+<p>Several redundant rows and columns are stripped from both thesauri to make them machine-readable. This includes the removal of references, basisOfRecord and coordinates information. A data frame is constructed that relates verbatim trait names to standardized terms.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">total_df &lt;-<span class="st"> </span>metadata[<span class="op">-</span><span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>),] <span class="co">#remove references, basisOfRecord and coordinates info</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2">id_df &lt;-<span class="st"> </span>total_df <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(category <span class="op">==</span><span class="st"> &quot;trait&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="dt">traitName =</span> names, identifier) <span class="co">#df with trait names and URIs</span></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3">total_df<span class="op">$</span>identifier &lt;-<span class="st"> </span><span class="ot">NULL</span> <span class="co">#remove identifier info</span></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4">unit_df &lt;-<span class="st"> </span>units[<span class="op">-</span><span class="dv">1</span>,] <span class="co">#remove references</span></a></code></pre></div>
+<p>All cleaned spreadsheets (3.1) should be in the same folder called “raw_datasets”. Their file path and names are loaded. A data frame is also made containing various metadata information for reach spreadsheet.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">datasets &lt;-<span class="st"> </span><span class="kw">list.files</span>(<span class="st">&quot;raw_datasets&quot;</span>, <span class="dt">pattern =</span> <span class="st">&quot;.csv$&quot;</span>, <span class="dt">full.names =</span> <span class="ot">TRUE</span>) <span class="co">#list with file path and names</span></a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">dataset_names &lt;-<span class="st"> </span><span class="kw">gsub</span>(<span class="st">&quot;raw_datasets/|.csv&quot;</span>, <span class="st">&quot;&quot;</span>, datasets) <span class="co">#names of all datasets</span></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3">metadata_df &lt;-<span class="st"> </span>metadata[<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>,] <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(dataset_names) <span class="co">#df with metadata information</span></a></code></pre></div>
+</div>
+</div>
+<div id="integrating-datasets" class="section level2">
+<h2><span class="header-section-number">3.3</span> Integrating datasets</h2>
+<p>The different datasets are integrated and combined with the use of a loop. Column header standardization, adding of metadata information, unit harmonization and the conversion to a long-table format are done seperately for every dataset and combined to a total dataframe after every iteration.</p>
+<p>An empty data frame is made to append all datasets to.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">ext_df &lt;-<span class="st"> </span><span class="kw">data.frame</span>() <span class="co">#empty df used for row binding</span></a></code></pre></div>
+<p>Column headers for a given dataset are selected and loaded from the corresponding <code>.csv</code> file. Numeric and character columns are loaded seperately and bound together.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(datasets)){</a>
+<a class="sourceLine" id="cb7-2" data-line-number="2">  </a>
+<a class="sourceLine" id="cb7-3" data-line-number="3">  <span class="co">#thesaurus subsets</span></a>
+<a class="sourceLine" id="cb7-4" data-line-number="4">  loop_thesaurus &lt;-<span class="st"> </span>total_df <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(category, classes, names, <span class="dt">verbatim =</span> dataset_names[i]) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">drop_na</span>()</a>
+<a class="sourceLine" id="cb7-5" data-line-number="5">  numeric_names &lt;-<span class="st"> </span>loop_thesaurus <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(classes <span class="op">==</span><span class="st"> &quot;numeric&quot;</span>)</a>
+<a class="sourceLine" id="cb7-6" data-line-number="6">  character_names &lt;-<span class="st"> </span>loop_thesaurus <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(classes <span class="op">==</span><span class="st"> &quot;character&quot;</span>)</a>
+<a class="sourceLine" id="cb7-7" data-line-number="7">  </a>
+<a class="sourceLine" id="cb7-8" data-line-number="8">  <span class="co">#read classes from dataset</span></a>
+<a class="sourceLine" id="cb7-9" data-line-number="9">  numeric_df &lt;-<span class="st"> </span><span class="kw">fread</span>(<span class="dt">input =</span> datasets[i], </a>
+<a class="sourceLine" id="cb7-10" data-line-number="10">                      <span class="dt">select =</span> numeric_names<span class="op">$</span>verbatim, </a>
+<a class="sourceLine" id="cb7-11" data-line-number="11">                      <span class="dt">col.names =</span> numeric_names<span class="op">$</span>names,</a>
+<a class="sourceLine" id="cb7-12" data-line-number="12">                      <span class="dt">colClasses =</span> <span class="st">&quot;numeric&quot;</span>,</a>
+<a class="sourceLine" id="cb7-13" data-line-number="13">                      <span class="dt">encoding =</span> <span class="st">&quot;UTF-8&quot;</span>)</a>
+<a class="sourceLine" id="cb7-14" data-line-number="14">  character_df &lt;-<span class="st"> </span><span class="kw">fread</span>(<span class="dt">input =</span> datasets[i], </a>
+<a class="sourceLine" id="cb7-15" data-line-number="15">                        <span class="dt">select =</span> character_names<span class="op">$</span>verbatim,</a>
+<a class="sourceLine" id="cb7-16" data-line-number="16">                        <span class="dt">col.names =</span> character_names<span class="op">$</span>names,</a>
+<a class="sourceLine" id="cb7-17" data-line-number="17">                        <span class="dt">colClasses =</span> <span class="st">&quot;character&quot;</span>,</a>
+<a class="sourceLine" id="cb7-18" data-line-number="18">                        <span class="dt">encoding =</span> <span class="st">&quot;UTF-8&quot;</span>)</a>
+<a class="sourceLine" id="cb7-19" data-line-number="19">  </a>
+<a class="sourceLine" id="cb7-20" data-line-number="20">  <span class="co">#bind for full dataset with standardized names</span></a>
+<a class="sourceLine" id="cb7-21" data-line-number="21">  dataset &lt;-<span class="st"> </span><span class="kw">cbind</span>(numeric_df, character_df)</a></code></pre></div>
+<p>Columns containing trait data are converted from wide to long format. Columns “traitValue” and “traitName” are added.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1">  <span class="co">#melt data_full to long table</span></a>
+<a class="sourceLine" id="cb8-2" data-line-number="2">  taxon_occ_meas &lt;-<span class="st"> </span>loop_thesaurus <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(category <span class="op">!=</span><span class="st"> &quot;trait&quot;</span>)</a>
+<a class="sourceLine" id="cb8-3" data-line-number="3">  traits &lt;-<span class="st"> </span>loop_thesaurus <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(category <span class="op">==</span><span class="st"> &quot;trait&quot;</span>)</a>
+<a class="sourceLine" id="cb8-4" data-line-number="4">  data_melt &lt;-<span class="st"> </span><span class="kw">melt</span>(<span class="dt">data =</span> dataset, <span class="dt">id.vars =</span> taxon_occ_meas<span class="op">$</span>names, <span class="dt">measure.vars =</span> traits<span class="op">$</span>names, <span class="dt">value.name =</span> <span class="st">&quot;traitValue&quot;</span>, <span class="dt">variable.name =</span> <span class="st">&quot;traitName&quot;</span>, <span class="dt">variable.factor =</span> <span class="ot">FALSE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">drop_na</span>(traitValue)</a></code></pre></div>
+<p>References, basis of record, coordinate system and SRS are added from the metadata thesaurus.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1">  <span class="co">#add references, basisOfRecord and CRS</span></a>
+<a class="sourceLine" id="cb9-2" data-line-number="2">  data_melt<span class="op">$</span>references &lt;-<span class="st"> </span>metadata_df[<span class="dv">1</span>,i] <span class="co">#add reference as column</span></a>
+<a class="sourceLine" id="cb9-3" data-line-number="3">  data_melt<span class="op">$</span>basisOfRecord &lt;-<span class="st"> </span>metadata_df[<span class="dv">2</span>,i] <span class="co">#add basisOfRecord column</span></a>
+<a class="sourceLine" id="cb9-4" data-line-number="4">  data_melt<span class="op">$</span>verbatimCoordinateSystem &lt;-<span class="st"> </span>metadata_df[<span class="dv">3</span>,i] <span class="co">#add verbatimCoordinateSystem as column</span></a>
+<a class="sourceLine" id="cb9-5" data-line-number="5">  data_melt<span class="op">$</span>verbatimSRS &lt;-<span class="st"> </span>metadata_df[<span class="dv">4</span>,i] <span class="co">#add verbatimSRS as column</span></a></code></pre></div>
+<p>Measurement units are added as a column. These are standardized to “cm”.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1">  <span class="co">#add unit column</span></a>
+<a class="sourceLine" id="cb10-2" data-line-number="2">  loop_unit &lt;-<span class="st"> </span>unit_df <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="dt">traitName =</span> names, <span class="dt">traitUnit =</span> dataset_names[i]) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">drop_na</span>() <span class="co">#relate unit to traitName</span></a>
+<a class="sourceLine" id="cb10-3" data-line-number="3">  data_melt &lt;-<span class="st"> </span><span class="kw">full_join</span>(data_melt, loop_unit, <span class="dt">by =</span> <span class="st">&quot;traitName&quot;</span>) <span class="co">#add unit column by merging</span></a>
+<a class="sourceLine" id="cb10-4" data-line-number="4">  </a>
+<a class="sourceLine" id="cb10-5" data-line-number="5">  <span class="co">#standardize measurement units</span></a>
+<a class="sourceLine" id="cb10-6" data-line-number="6">  data_melt<span class="op">$</span>traitValue &lt;-<span class="st"> </span><span class="kw">ifelse</span>(data_melt<span class="op">$</span>traitUnit <span class="op">==</span><span class="st"> &quot;m&quot;</span>, data_melt<span class="op">$</span>traitValue<span class="op">*</span><span class="dv">100</span>, data_melt<span class="op">$</span>traitValue)</a>
+<a class="sourceLine" id="cb10-7" data-line-number="7">  data_melt<span class="op">$</span>traitValue &lt;-<span class="st"> </span><span class="kw">ifelse</span>(data_melt<span class="op">$</span>traitUnit <span class="op">==</span><span class="st"> &quot;mm&quot;</span>, data_melt<span class="op">$</span>traitValue<span class="op">/</span><span class="dv">10</span>, data_melt<span class="op">$</span>traitValue)</a>
+<a class="sourceLine" id="cb10-8" data-line-number="8">  data_melt<span class="op">$</span>traitUnit &lt;-<span class="st"> </span><span class="kw">ifelse</span>(data_melt<span class="op">$</span>traitUnit <span class="op">==</span><span class="st"> &quot;m&quot;</span> <span class="op">|</span><span class="st"> </span>data_melt<span class="op">$</span>traitUnit <span class="op">==</span><span class="st"> &quot;mm&quot;</span>, <span class="st">&quot;cm&quot;</span>, data_melt<span class="op">$</span>traitUnit)</a></code></pre></div>
+<p>Add verbatim trait names as column. Trait identifiers are added.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1">  <span class="co">#add verbatim traitname column</span></a>
+<a class="sourceLine" id="cb11-2" data-line-number="2">  verba_name &lt;-<span class="st"> </span><span class="kw">select</span>(traits, <span class="dt">traitName =</span> names, <span class="dt">verbatimTraitName =</span> verbatim)  <span class="co">#df to relate traitname to verbatim traitname</span></a>
+<a class="sourceLine" id="cb11-3" data-line-number="3">  data_melt &lt;-<span class="st"> </span><span class="kw">full_join</span>(data_melt, verba_name, <span class="dt">by =</span> <span class="st">&quot;traitName&quot;</span>) <span class="co">#add verbatim traitname column by merging</span></a>
+<a class="sourceLine" id="cb11-4" data-line-number="4">  </a>
+<a class="sourceLine" id="cb11-5" data-line-number="5">  <span class="co">#add trait-identifier column</span></a>
+<a class="sourceLine" id="cb11-6" data-line-number="6">  data_melt &lt;-<span class="st"> </span><span class="kw">full_join</span>(data_melt, id_df, <span class="dt">by =</span> <span class="st">&quot;traitName&quot;</span>)</a>
+<a class="sourceLine" id="cb11-7" data-line-number="7">  data_melt &lt;-<span class="st"> </span><span class="kw">subset</span>(data_melt, <span class="kw">is.na</span>(traitValue) <span class="op">==</span><span class="st"> </span><span class="ot">FALSE</span>)</a></code></pre></div>
+<p>Rows are bound for every dataset.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1">  <span class="co">#output df (used for core table and extensions)</span></a>
+<a class="sourceLine" id="cb12-2" data-line-number="2">  ext_df &lt;-<span class="st"> </span><span class="kw">bind_rows</span>(ext_df, data_melt)</a>
+<a class="sourceLine" id="cb12-3" data-line-number="3">  </a>
+<a class="sourceLine" id="cb12-4" data-line-number="4"><span class="er">}</span></a></code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="thesauri.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="output-tables.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

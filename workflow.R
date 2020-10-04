@@ -13,8 +13,11 @@ library(rgdal)
 library(Taxonstand)
 library(tidyverse)
 
-setwd("~/data_repository")
+setwd("~/traitData")
+source("validation_script.R")
 
+#----Validate datasets and metadata thesaurus----
+validate_metadata()
 
 #----Load metadata and units thesauri----
 metadata <- read_excel("thesauri/metadata.xlsx")
@@ -45,7 +48,8 @@ for (i in 1:length(datasets)){
                       select = numeric_names$verbatim, 
                       col.names = numeric_names$names,
                       colClasses = "numeric",
-                      encoding = "UTF-8")
+                      encoding = "UTF-8",
+                      dec = ".")
   character_df <- fread(input = datasets[i], 
                         select = character_names$verbatim,
                         col.names = character_names$names,
@@ -61,10 +65,10 @@ for (i in 1:length(datasets)){
   data_melt <- melt(data = dataset, id.vars = taxon_occ_meas$names, measure.vars = traits$names, value.name = "traitValue", variable.name = "traitName", variable.factor = FALSE) %>% drop_na(traitValue)
   
   #add references, basisOfRecord and CRS
-  data_melt$references <- metadata_df[1,i] #add reference as column
-  data_melt$basisOfRecord <- metadata_df[2,i] #add basisOfRecord column
-  data_melt$verbatimCoordinateSystem <- metadata_df[3,i] #add verbatimCoordinateSystem as column
-  data_melt$verbatimSRS <- metadata_df[4,i] #add verbatimSRS as column
+  data_melt$references <- as.character(metadata_df[1,i]) #add reference as column
+  data_melt$basisOfRecord <- as.character(metadata_df[2,i]) #add basisOfRecord column
+  data_melt$verbatimCoordinateSystem <- as.character(metadata_df[3,i]) #add verbatimCoordinateSystem as column
+  data_melt$verbatimSRS <- as.character(metadata_df[4,i]) #add verbatimSRS as column
   
   #add unit column
   loop_unit <- unit_df %>% select(traitName = names, traitUnit = dataset_names[i]) %>% drop_na() #relate unit to traitName

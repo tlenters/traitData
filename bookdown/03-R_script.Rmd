@@ -13,7 +13,7 @@ Besides the two thesauri (chapter 2), the R-script also requires the plant trait
 ## Loading and preparing input data
 
 ### Installing and loading packages
-The following script checks if the required packages for this script are installed, and installs those that are missing. Packages are then loaded and working directory is set.
+The following script checks if the required packages for this script are installed, and installs those that are missing. Packages are then loaded, the working directory is set and the validation function is sourced.
 ```{r load_packages, eval=FALSE, include=TRUE}
 ls <- c("readxl","data.table","dplyr","reshape2","traitdataform","stringr","rgdal","Taxonstand","tidyverse","rangeBuilder")
 new.packages <- ls[!(ls %in% installed.packages()[,"Package"])]
@@ -29,7 +29,14 @@ library(rgdal)
 library(Taxonstand)
 library(tidyverse)
 
-setwd("~/data_repository")
+setwd("~/traitData")
+source("validation_script.R")
+```
+
+### Validate dataset and metadata thesaurus
+This function checks if all datasets are in the right format for the workflow and that the metadata thesaurus is filled out correctly. In the case of common mistakes (as in Fig. 2 of the manuscript) the name of the dataset and column header is given. It is also checked if column headers entered in the metadata thesaurus are present in each dataset.
+```{r validate, eval=FALSE, include=TRUE}
+validate_metadata()
 ```
 
 ### Loading thesauri and preperation
