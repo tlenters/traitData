@@ -4,7 +4,7 @@ This repository includes a workflow to automatically integrate plant trait data 
 
 How to cite: 
 
-* Lenters, T. P., Henderson, A., Dracxler, C. M., Elias, G. A., Mogue, S., Couvreur, T. L. P., & Kissling, W. D. (2020). *Integration and harmonization of trait data from plant individuals across heterogeneous sources.* Manuscript submitted for publication.
+* Lenters, T. P., Henderson, A., Dracxler, C. M., Elias, G. A., Kamga, S. M., Couvreur, T. L., & Kissling, W. D. (2021). _Integration and harmonization of trait data from plant individuals across heterogeneous sources._ Ecological Informatics, 62, 101206. https://doi.org/10.1016/j.ecoinf.2020.101206
 
 This repository contains:
 
